@@ -1,0 +1,34 @@
+// Mixins
+@use "mixins/functions" as *;
+@use "mixins/deprecate" as *;
+@use "mixins/breakpoints" as *;
+@use "mixins/typography" as *;
+@use "mixins/utilities" as *;
+
+// Base
+@use "base/variables" as var;
+@use "base/reset";
+@use "base/typography";
+@use "base/page";
+
+// Components
+// @use "components/button";
+// @use "components/cards";
+// @use "components/dots";
+// @use "components/form";
+// @use "components/icons";
+// @use "components/images";
+// @use "components/nav";
+// @use "components/pagination";
+
+// Layout
+// @use "layout/header";
+// @use "layout/footer";
+// @use "layout/hero";
+// @use "layout/desafios";
+// @use "layout/sucesso";
+// @use "layout/diagnostico";
+// @use "layout/impacto";
+// @use "layout/faq";
+// @use "layout/contato";
+// @use "layout/sitemap";

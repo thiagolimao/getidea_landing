@@ -1,0 +1,145 @@
+// General Colors
+/// Default color variables
+
+$blue-primary: #2aace3;
+$blue-secondary: #3b5999;
+
+$green-primary: #b3d334;
+$green-secondary: #8ec640;
+
+$red-primary: #f26724;
+$red-secondary: #9e1d20;
+
+$gray-primary-light: #8e8e8e;
+$gray-secondary-light: #717171;
+
+$gray-primary-dark: #d1d3d4;
+$gray-secondary-dark: #a0a0a0;
+$gray-tertiary-dark: #a3a3a3;
+
+$primary-light: $blue-primary;
+$secondary-light: $blue-secondary;
+$tertiary-light: #008071;
+
+$primary-dark: $red-primary;
+$secondary-dark: $red-secondary;
+$tertiary-dark: #008071;
+
+$black: #000000;
+$blue: $blue-primary;
+$green: $green-secondary;
+$yellow: #fad01d;
+$red: $red-primary;
+
+// Background color
+$bg-primary-light: #fefefe;
+$bg-secondary-light: #dcdce0;
+
+$bg-primary-dark: #0e1015;
+$bg-secondary-dark: #262629;
+
+$bg-gradient-light: linear-gradient(
+  77.62deg,
+  $bg-primary-light 9%,
+  $bg-secondary-light 84.27%
+);
+$bg-gradient-dark: linear-gradient(
+  77.62deg,
+  $bg-primary-dark 9%,
+  $bg-secondary-dark 84.27%
+);
+
+// outline
+$bg-primary-light-opacity: rgba($bg-primary-light, 0.4);
+$bg-primary-dark-opacity: rgba($bg-primary-dark, 0.4);
+
+// Typography color
+$text-primary-light: #141414;
+$text-secondary-light: #707070;
+
+$text-primary-dark: #f5f5f5;
+$text-secondary-dark: #cccccc;
+
+// State color
+$state-disable-light: $gray-primary-light;
+$state-error-light: $red-primary;
+$state-hover-filled-light: rgba($bg-primary-light, 0.8);
+$state-pressed-filled-light: rgba($bg-primary-light, 0.6);
+$state-hover-not-filled-light: rgba($bg-primary-light, 0.24);
+$state-pressed-not-filled-light: rgba($bg-primary-light, 0.4);
+
+$state-disable-dark: $gray-primary-dark;
+$state-error-dark: $red-secondary;
+$state-hover-filled-dark: rgba($bg-primary-dark, 0.8);
+$state-pressed-filled-dark: rgba($bg-primary-dark, 0.6);
+$state-hover-not-filled-dark: rgba($bg-primary-dark, 0.24);
+$state-pressed-not-filled-dark: rgba($bg-primary-dark, 0.4);
+
+/// Fonts Variables
+$font-primary: "Lato", sans-serif;
+$font-secondary: "Encode Sans Semi Expanded", sans-serif;
+
+$font-default: $font-primary;
+$heading-font: $font-secondary;
+$text-font: $font-default;
+
+$lh-title: 116%;
+$lh-text: 140%;
+
+/// Fonts weight
+$fw-xlight: 200;
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semi: 600;
+$fw-bold: 700;
+$fw-xbold: 800;
+
+/// userSpaceOnUse
+$pad-space: 10rem;
+
+/// Radius
+$radius-default: 1rem;
+
+//side-navbar
+$side-navbar-width: 345px;
+$side-navbar-fullWidth: 100vw;
+
+// Adicione @debug para verificação
+@debug "Variáveis de navbar carregadas";
+
+/// Grid Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+/// Animate speed
+$speed-animate: 5s;
+$speed-animate-sm: 10s;
+$speed-animate-lg: 15s;
+$speed-animate-xxl: 20s;
+
+// "data:image/svg+xml,";
+/// Icons svg
+$icon-arrow-type01: "data:image/svg+xml,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M6.87616%203.90289L2.41431%208.41716C2.20127%208.62534%201.91594%208.74053%201.61977%208.73793C1.32359%208.73533%201.04028%208.61513%200.830847%208.40324C0.621413%208.19135%200.502616%207.9047%200.500043%207.60505C0.497469%207.3054%200.611324%207.01671%200.817087%206.80117L7.20713%200.336039C7.31179%200.229542%207.43622%200.145029%207.57328%200.0873586C7.71033%200.0296886%207.8573%200%208.00574%200C8.15418%200%208.30115%200.0296886%208.4382%200.0873586C8.57526%200.145029%208.69969%200.229542%208.80435%200.336039L15.1944%206.80117C15.3951%207.01768%2015.5046%207.30469%2015.4999%207.60147C15.4951%207.89825%2015.3764%208.18151%2015.1689%208.39132C14.9614%208.60113%2014.6813%208.72102%2014.388%208.72563C14.0946%208.73024%2013.811%208.61921%2013.5972%208.41602L9.13532%203.90174V14.8571C9.13532%2015.1602%209.01631%2015.4509%208.80447%2015.6653C8.59264%2015.8796%208.30532%2016%208.00574%2016C7.70616%2016%207.41884%2015.8796%207.20701%2015.6653C6.99517%2015.4509%206.87616%2015.1602%206.87616%2014.8571V3.90289Z%22%20fill%3D%22%23293189%22%2F%3E%0A%3C%2Fsvg%3E%0A";
+$icon-arrow-type02: "data:image/svg+xml,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M8%206.34179L2.04037%2012.1695C1.8133%2012.384%201.50918%2012.5026%201.1935%2012.5C0.877828%2012.4973%200.575858%2012.3735%200.352633%2012.1552C0.129408%2011.9369%200.00278865%2011.6416%204.5513e-05%2011.3329C-0.00269762%2011.0242%200.118655%2010.7268%200.337967%2010.5048L7.1488%203.8447C7.37457%203.62399%207.68075%203.5%208%203.5C8.31925%203.5%208.62543%203.62399%208.8512%203.8447L15.662%2010.5048C15.8813%2010.7268%2016.0027%2011.0242%2016%2011.3329C15.9972%2011.6416%2015.8706%2011.9369%2015.6474%2012.1552C15.4241%2012.3735%2015.1222%2012.4973%2014.8065%2012.5C14.4908%2012.5026%2014.1867%2012.384%2013.9596%2012.1695L8%206.34179Z%22%20fill%3D%22%23293189%22%2F%3E%0A%3C%2Fsvg%3E%0A";
+$icon-arrow-graphic: "data:image/svg+xml,%3Csvg%20width%3D%2248%22%20height%3D%2248%22%20viewBox%3D%220%200%2048%2048%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M45.75%2026.8125V12.75M45.75%2012.75H32.1562M45.75%2012.75L32.1562%2026.8125C29.7567%2029.2948%2028.5572%2030.5357%2027.0847%2030.6729C26.8411%2030.6957%2026.5964%2030.6957%2026.3528%2030.6729C24.8803%2030.5357%2023.6808%2029.2948%2021.2812%2026.8125C18.8817%2024.3302%2017.682%2023.0893%2016.2096%2022.9521C15.9662%2022.9293%2015.7213%2022.9293%2015.4779%2022.9521C14.0055%2023.0893%2012.8057%2024.3302%2010.4062%2026.8125L2.25%2035.25%22%20stroke%3D%22%233B5999%22%20stroke-width%3D%224.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%0A%3C%2Fsvg%3E";
+
+
+/// Backgrounds
+$bg-diagnostico-xxl: "../img/diagnostico/bg-diagnostico-xxl.webp";
+$bg-diagnostico-xl: "../img/diagnostico/bg-diagnostico-xl.webp";
+$bg-diagnostico-lg: "../img/diagnostico/bg-diagnostico-lg.webp";
+$bg-diagnostico-md: "../img/diagnostico/bg-diagnostico-md.webp";
+$bg-diagnostico: "../img/diagnostico/bg-diagnostico-sm.webp";
+
+$bg-contato-xxl: "../img/contato/bg-contato-xxl.webp";
+$bg-contato-xl: "../img/contato/bg-contato-xl.webp";
+$bg-contato-lg: "../img/contato/bg-contato-lg.webp";
+$bg-contato-md: "../img/contato/bg-contato-md.webp";
+$bg-contato: "../img/contato/bg-contato-sm.webp";

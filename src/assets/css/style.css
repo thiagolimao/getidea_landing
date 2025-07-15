@@ -1,0 +1,696 @@
+/**
+* Template Name: lps_getidea - v1.0.0
+* Template URL: http://thiagolima.com
+* Author: Limão Acidez Tecnológica
+* License: MIT
+*/
+
+@charset "UTF-8";
+/*--------------------------------------------------------------
+# Functions
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Mixins Typography
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Mixins Utilities
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Base Reset
+--------------------------------------------------------------*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+}
+
+mark {
+  background-color: transparent;
+  color: inherit;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input,
+select,
+textarea {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/*--------------------------------------------------------------
+# Base Typography
+--------------------------------------------------------------*/
+body {
+  font-family: "Lato", sans-serif;
+}
+
+body,
+input,
+select,
+textarea {
+  font-family: "Lato", sans-serif;
+  line-height: 140%;
+}
+
+a,
+.link,
+.btn {
+  transition: 0.5s;
+  text-decoration: underline;
+  font-family: "Lato", sans-serif;
+}
+a:hover, a:active, a:focus,
+.link:hover,
+.link:active,
+.link:focus,
+.btn:hover,
+.btn:active,
+.btn:focus {
+  outline: none;
+  text-decoration: none;
+}
+a.link-default,
+.link.link-default,
+.btn.link-default {
+  display: block;
+  position: relative;
+  transition: 0.3s;
+  padding: 0 3px;
+  text-decoration: none !important;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+a.link-default:before,
+.link.link-default:before,
+.btn.link-default:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.btn.link-default:hover:before,
+.link.link-default:hover:before,
+a.link-default:hover:before,
+.active > .btn.link-default:before,
+.active > .link.link-default:before,
+.active > a.link-default:before {
+  visibility: visible;
+  width: 100%;
+}
+
+strong,
+b {
+  font-weight: 700;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Encode Sans Semi Expanded", sans-serif;
+  font-style: normal;
+  line-height: 116%;
+}
+.title-default {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+@media (min-width: 576px) {
+  .title-default {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 768px) {
+  .title-default {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .title-default {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .title-default {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1400px) {
+  .title-default {
+    font-size: 3rem;
+  }
+}
+.title-default span {
+  color: #3b5999;
+}
+
+.subtitle-default {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #707070;
+}
+@media (min-width: 576px) {
+  .subtitle-default {
+    font-size: 0.875rem;
+    font-weight: 700;
+  }
+}
+@media (min-width: 768px) {
+  .subtitle-default {
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+}
+@media (min-width: 992px) {
+  .subtitle-default {
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+}
+@media (min-width: 1200px) {
+  .subtitle-default {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+}
+@media (min-width: 1400px) {
+  .subtitle-default {
+    font-size: 1.375rem;
+    font-weight: 700;
+  }
+}
+
+header .subtitle-default {
+  font-family: "Encode Sans Semi Expanded", sans-serif;
+  font-style: normal;
+  line-height: 116%;
+}
+
+h1,
+.title-sz1 {
+  font-size: 3rem;
+}
+
+h2,
+.title-sz2 {
+  font-size: 2.5rem;
+}
+@media (max-width: 575.98px) {
+  h2,
+  .title-sz2 {
+    font-size: 1.5rem;
+  }
+}
+
+h3,
+.title-sz3 {
+  font-size: 2rem;
+}
+@media (max-width: 575.98px) {
+  h3,
+  .title-sz3 {
+    font-size: 1.25rem;
+  }
+}
+
+h4,
+.title-sz4 {
+  font-size: 1.5rem;
+}
+
+h5,
+.title-sz5 {
+  font-size: 1.25rem;
+}
+
+h6,
+.title-sz6 {
+  font-size: 1rem;
+}
+
+.title-sz7 {
+  font-size: 0.875rem;
+}
+
+.title-sz8 {
+  font-size: 0.75rem;
+}
+
+.subtitle-sz1 {
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+
+.subtitle-sz2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.subtitle-sz3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.subtitle-sz4 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.subtitle-sz5 {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.letter {
+  font-family: "Encode Sans Semi Expanded", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.tit-legend {
+  font-family: "Encode Sans Semi Expanded", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 116%;
+}
+
+p {
+  padding: 0;
+  line-height: 140%;
+  font-family: "Lato", sans-serif;
+}
+
+.text-sz1 {
+  font-size: 1.375rem;
+}
+
+.text-sz2 {
+  font-size: 1.25rem;
+}
+
+.text-sz3 {
+  font-size: 1.125rem;
+}
+
+.text-sz4 {
+  font-size: 1rem;
+}
+
+.text-sz5 {
+  font-size: 0.875rem;
+}
+
+.text-sz6 {
+  font-size: 0.75rem;
+}
+
+ul a,
+ol a {
+  text-decoration: none;
+}
+ul a:hover,
+ol a:hover {
+  text-decoration: underline;
+}
+ul a.active,
+ol a.active {
+  font-weight: 700;
+}
+
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  padding-left: 1rem;
+}
+
+ul.list-bullet {
+  list-style: none;
+}
+ul.list-bullet li:before {
+  content: "●";
+}
+
+blockquote {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+blockquote p {
+  font-size: 1.25rem;
+}
+blockquote p:before, blockquote p:after {
+  content: '"';
+}
+blockquote footer {
+  font-size: 1.375rem;
+  font-weight: 400;
+}
+.light .link {
+  color: #707070;
+}
+.light .link-default:before {
+  background-color: #2aace3;
+}
+.light blockquote {
+  border-color: #8e8e8e;
+}
+.light ul a,
+.light ol a {
+  color: #2aace3;
+}
+
+.dark .link {
+  color: #cccccc;
+}
+.dark .link-default:before {
+  background-color: #f26724;
+}
+.dark blockquote {
+  border-color: #d1d3d4;
+}
+.dark ul a,
+.dark ol a {
+  color: #f26724;
+}
+
+/*--------------------------------------------------------------
+# Basic
+--------------------------------------------------------------*/
+body {
+  -ms-overflow-style: scrollbar;
+}
+
+html,
+body {
+  height: 100%;
+}
+@media (min-width: 320px) {
+  html,
+  body {
+    min-width: 320px;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fefefe;
+  overflow-x: hidden;
+  min-height: auto;
+}
+
+picture {
+  display: block;
+}
+picture img {
+  display: block;
+  max-width: 100%;
+}
+
+.pd-section {
+  padding-top: 3.3333333333rem;
+  padding-bottom: 3.3333333333rem;
+}
+@media (min-width: 576px) {
+  .pd-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+@media (min-width: 992px) {
+  .pd-section {
+    padding-top: 6.6666666667rem;
+    padding-bottom: 6.6666666667rem;
+  }
+}
+@media (min-width: 1200px) {
+  .pd-section {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+}
+
+.bg-light {
+  background-color: #fefefe;
+}
+
+.bg-dark {
+  background-color: #0e1015;
+}
+
+/*--------------------------------------------------------------
+# Container
+--------------------------------------------------------------*/
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+#main section {
+  position: relative;
+}
+#main section h2.title-default {
+  font-size: 1.5rem;
+}
+@media (min-width: 576px) {
+  #main section h2.title-default {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  #main section h2.title-default {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  #main section h2.title-default {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  #main section h2.title-default {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1400px) {
+  #main section h2.title-default {
+    font-size: 3rem;
+  }
+}
+#main section p.text-intro {
+  font-size: 1.125rem;
+}
+@media (min-width: 576px) {
+  #main section p.text-intro {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 768px) {
+  #main section p.text-intro {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 992px) {
+  #main section p.text-intro {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 1200px) {
+  #main section p.text-intro {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1400px) {
+  #main section p.text-intro {
+    font-size: 1.375rem;
+  }
+}

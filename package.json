@@ -1,0 +1,91 @@
+{
+  "name": "lps_getidea",
+  "server": "surge.sh",
+  "title": "project_title",
+  "version": "1.0.0",
+  "description": "project_description",
+  "author": "Limão Acidez Tecnológica",
+  "homepage": "http://thiagolima.com",
+  "license": "MIT",
+  "main": "gulpfile.mjs",
+  "type": "module",
+  "scripts": {
+    "start": "gulp start",
+    "build": "gulp build",
+    "watch": "gulp watch",
+    "deploy": "gulp deployTask",
+    "lint:js": "eslint 'src/**/*.{js,mjs,njk}' --fix",
+    "format": "prettier --write 'src/**/*.{js,scss,html}'",
+    "lint": "echo 'Lint passed'",
+    "prepare": "husky install"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,html}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "autoprefixer": "^10.4.21",
+    "gulp-cli": "^3.1.0",
+    "gulp-imagemin": "^9.1.0",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-postcss": "^10.0.0",
+    "imagemin-webp": "^8.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.27.4",
+    "@babel/preset-env": "^7.27.2",
+    "@eslint/js": "^9.29.0",
+    "browser-sync": "^3.0.4",
+    "bufferutil": "^4.0.9",
+    "compression": "^1.8.0",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.5.0",
+    "fs-extra": "^11.3.0",
+    "glob": "^11.0.3",
+    "globals": "^16.2.0",
+    "graceful-fs": "^4.2.11",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-beautify": "^3.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-eslint-new": "^2.4.0",
+    "gulp-gzip": "^1.4.2",
+    "gulp-inject-string": "^1.1.2",
+    "gulp-purgecss": "^7.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.1.4",
+    "gulp-sass": "^6.0.1",
+    "gulp-sass-lint": "^1.4.0",
+    "gulp-surge": "^0.1.4",
+    "gulp-tap": "^2.0.0",
+    "gulp-terser": "^2.1.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^13.0.0",
+    "merge-stream": "^2.0.0",
+    "node-notifier": "^10.0.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.5.4",
+    "postcss-purgecss": "^5.0.0",
+    "prettier": "^3.0.0",
+    "purgecss": "^7.0.2",
+    "sass": "^1.89.2"
+  },
+  "resolutions": {
+    "yargs-parser": "^21.1.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

@@ -1,0 +1,171 @@
+@use "../base/variables" as var;
+@use "../mixins/breakpoints" as breakpoint;
+
+/*--------------------------------------------------------------
+# Mixins Typography
+--------------------------------------------------------------*/
+@mixin space-default {
+  padding-top: calc(var.$pad-space / 1.5);
+  padding-bottom: calc(var.$pad-space / 1.5);
+
+  @include breakpoint.media-breakpoint-up(md) {
+    padding-top: var.$pad-space;
+    padding-bottom: var.$pad-space;
+  }
+}
+
+@mixin title-sz1 {
+  font-size: 3rem;
+}
+
+@mixin title-sz2 {
+  font-size: 2.5rem;
+}
+
+@mixin title-sz3 {
+  font-size: 2rem;
+}
+
+@mixin title-sz4 {
+  font-size: 1.5rem;
+}
+
+@mixin title-sz5 {
+  font-size: 1.25rem;
+}
+
+@mixin title-sz6 {
+  font-size: 1rem;
+}
+
+@mixin title-sz7 {
+  font-size: 0.875rem;
+}
+
+@mixin title-sz8 {
+  font-size: 0.75rem;
+}
+
+@mixin subtitle-sz1 {
+  font-size: 1.375rem;
+  font-weight: var.$fw-bold;
+}
+
+@mixin subtitle-sz2 {
+  font-size: 1.25rem;
+  font-weight: var.$fw-bold;
+}
+
+@mixin subtitle-sz3 {
+  font-size: 1.125rem;
+  font-weight: var.$fw-bold;
+}
+
+@mixin subtitle-sz4 {
+  font-size: 1rem;
+  font-weight: var.$fw-bold;
+}
+
+@mixin subtitle-sz5 {
+  font-size: 0.875rem;
+  font-weight: var.$fw-bold;
+}
+
+@mixin hero-sz1 {
+  font-size: 2.75rem;
+}
+
+@mixin hero-sz2 {
+  font-size: 1.875rem;
+}
+
+@mixin hero-sz3 {
+  font-size: 1.75rem;
+}
+
+@mixin hero-sz4 {
+  font-size: 1rem;
+}
+
+@mixin hero-sz5 {
+  font-size: 1.5rem;
+}
+
+@mixin letter-sz1 {
+  font-size: 2.125rem;
+}
+
+@mixin letter-sz2 {
+  font-size: 1.625rem;
+}
+
+@mixin letter-sz3 {
+  font-size: 1.25rem;
+}
+
+@mixin letter-sz4 {
+  font-size: 0.875rem;
+}
+
+@mixin letter-sz5 {
+  font-size: 1rem;
+}
+
+@mixin text-sz1 {
+  font-size: 1.375rem;
+}
+
+@mixin text-sz2 {
+  font-size: 1.25rem;
+}
+
+@mixin text-sz3 {
+  font-size: 1.125rem;
+}
+
+@mixin text-sz4 {
+  font-size: 1rem;
+}
+
+@mixin text-sz5 {
+  font-size: 0.875rem;
+}
+
+@mixin text-sz6 {
+  font-size: 0.75rem;
+}
+
+@mixin button-sz1 {
+  font-size: 1.375rem;
+}
+
+@mixin button-sz2 {
+  font-size: 1rem;
+}
+
+@mixin button-sz3 {
+  font-size: 1.125rem;
+}
+
+@mixin button-sz4 {
+  font-size: 1rem;
+}
+
+@mixin button-sz5 {
+  font-size: 0.875rem;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+}

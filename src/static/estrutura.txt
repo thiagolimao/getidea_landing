@@ -1,0 +1,108 @@
+src/
+├── assets/
+│   ├── css/
+│   ├── fonts/
+│   ├── img/
+│   │   ├── contact/
+│   │   ├── favicon/
+│   │   ├── hero/
+│   │   ├── image/
+│   │   ├── portfolio/
+│   │   ├── service/
+│   │   └── social/
+│   ├── js/
+│   │   └── main.js
+│   └── scss/
+│       ├── base/
+│       │   ├── _page.scss
+│       │   ├── _reset.scss
+│       │   ├── _typography.scss
+│       │   └── _variables.scss
+│       ├── components/
+│       │   ├── _button.scss
+│       │   ├── _cards.scss
+│       │   ├── _cookies.scss
+│       │   ├── _dots.scss
+│       │   ├── _extras.scss
+│       │   ├── _icons.scss
+│       │   ├── _images.scss
+│       │   ├── _indicator.scss
+│       │   ├── _marquee.scss
+│       │   ├── _nav.scss
+│       │   ├── _pagination.scss
+│       │   ├── _preloader.scss
+│       │   ├── _search.scss
+│       │   └── _side-navbar.scss
+│       ├── layout/
+│       │   ├── _brands.scss
+│       │   ├── _contact.scss
+│       │   ├── _footer.scss
+│       │   ├── _getidea.scss
+│       │   ├── _header.scss
+│       │   ├── _hero.scss
+│       │   ├── _letter.scss
+│       │   ├── _portfolio.scss
+│       │   └── _service.scss
+│       ├── mixins/
+│       │   ├── _breakpoints.scss
+│       │   ├── _deprecate.scss
+│       │   ├── _functions.scss
+│       │   ├── _typography.scss
+│       │   └── _utilities.scss
+│       ├── pages/
+│       │   ├── _home.scss
+│       └── style.scss
+├── data/
+│   └── dependencies.json
+├── templates/
+│   ├── layouts/
+│   │   └── base.njk
+│   ├── includes/
+│       ├── components/
+│       │   ├── card-portfolio-abec.njk
+│       │   ├── card-portfolio-festejante.njk
+│       │   ├── card-portfolio-fuse.njk
+│       │   ├── card-portfolio-tontongue.njk
+│       │   ├── card-portfolio.njk
+│       │   ├── card-service-design.njk
+│       │   ├── card-service-estrategia.njk
+│       │   ├── card-service-ia.njk
+│       │   ├── card-service-infra.njk
+│       │   ├── card-service-tecnologia.njk
+│       │   └── side-navbar.njk
+│       └── meta/
+│       │   ├── _meta-seo.njk
+│       │   ├── _meta-og.njk
+│       │   └── _meta-twitter.njk
+│       └── sections/                       `Templates de seções específicas`
+│           ├── brands.njk 
+│           ├── contact.njk
+│           ├── footer.njk
+│           ├── getidea.njk
+│           ├── header.njk
+│           ├── hero.njk
+│           ├── image.njk
+│           ├── letter.njk
+│           ├── portfolio.njk
+│           └──service.njk
+├── views/
+│   ├── index.njk
+└── static/
+│   ├── robots.txt
+│   └── sitemap.xml
+├── .babelrc
+├── .eslintrc.cjs
+├── .eslintrc.json
+├── .gitignore
+├── .nvmrc
+├── .prettierrc.json
+├── .sass-lint.yml
+├── .stylelintignore
+├── .stylelintrc.json
+├── .surgeignore
+├── eslint.config.js
+├── gulpfile.mjs
+├── package.json
+├── purgecss.config.js
+├── README.md
+└── yarn.lock

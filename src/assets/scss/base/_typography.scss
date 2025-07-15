@@ -1,0 +1,363 @@
+@use "variables" as var;
+@use "../mixins/breakpoints" as breakpoint;
+@use "../mixins/typography" as typography;
+
+/*--------------------------------------------------------------
+# Base Typography
+--------------------------------------------------------------*/
+body {
+  font-family: var.$font-default;
+}
+
+body,
+input,
+select,
+textarea {
+  font-family: var.$font-default;
+  line-height: var.$lh-text;
+}
+
+a,
+.link,
+.btn {
+  transition: 0.5s;
+  text-decoration: underline;
+  font-family: var.$font-default;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+    text-decoration: none;
+  }
+
+  &.link-default {
+    display: block;
+    position: relative;
+    transition: 0.3s;
+    padding: 0 3px;
+    text-decoration: none !important;
+    max-width: fit-content;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+      visibility: hidden;
+      width: 0px;
+      transition: all 0.3s ease-in-out 0s;
+    }
+  }
+}
+
+.btn.link-default:hover:before,
+.link.link-default:hover:before,
+a.link-default:hover:before,
+.active > .btn.link-default:before,
+.active > .link.link-default:before,
+.active > a.link-default:before {
+  visibility: visible;
+  width: 100%;
+}
+
+strong,
+b {
+  font-weight: var.$fw-bold;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var.$heading-font;
+  font-style: normal;
+  line-height: var.$lh-title;
+
+  + p {
+    // margin-top: 1rem;
+  }
+}
+
+.title-default {
+  @include typography.title-sz4;
+  font-weight: var.$fw-bold;
+
+  @include breakpoint.media-breakpoint-up(sm) {
+    @include typography.title-sz5;
+  }
+  @include breakpoint.media-breakpoint-up(md) {
+    @include typography.title-sz3;
+  }
+
+  @include breakpoint.media-breakpoint-up(lg) {
+    @include typography.title-sz3;
+  }
+
+  @include breakpoint.media-breakpoint-up(xl) {
+    @include typography.title-sz2;
+  }
+
+  @include breakpoint.media-breakpoint-up(xxl) {
+    @include typography.title-sz1;
+  }
+
+  span {
+    color: var.$secondary-light;
+  }
+}
+
+.subtitle-default {
+  @include typography.subtitle-sz4;
+  text-transform: uppercase;
+  color: var.$text-secondary-light;
+
+  @include breakpoint.media-breakpoint-up(sm) {
+    @include typography.subtitle-sz5;
+  }
+  @include breakpoint.media-breakpoint-up(md) {
+    @include typography.subtitle-sz3;
+  }
+
+  @include breakpoint.media-breakpoint-up(lg) {
+    @include typography.subtitle-sz3;
+  }
+
+  @include breakpoint.media-breakpoint-up(xl) {
+    @include typography.subtitle-sz2;
+  }
+
+  @include breakpoint.media-breakpoint-up(xxl) {
+    @include typography.subtitle-sz1;
+  }
+}
+
+header {
+  .subtitle-default {
+    font-family: var.$heading-font;
+    font-style: normal;
+    line-height: var.$lh-title;
+  }
+}
+
+h1,
+.title-sz1 {
+  @include typography.title-sz1;
+}
+
+h2,
+.title-sz2 {
+  @include typography.title-sz2;
+
+  @include breakpoint.media-breakpoint-down(sm) {
+    @include typography.title-sz4;
+  }
+}
+
+h3,
+.title-sz3 {
+  @include typography.title-sz3;
+
+  @include breakpoint.media-breakpoint-down(sm) {
+    @include typography.title-sz5;
+  }
+}
+
+h4,
+.title-sz4 {
+  @include typography.title-sz4;
+}
+
+h5,
+.title-sz5 {
+  @include typography.title-sz5;
+}
+
+h6,
+.title-sz6 {
+  @include typography.title-sz6;
+}
+
+.title-sz7 {
+  @include typography.title-sz7;
+}
+
+.title-sz8 {
+  @include typography.title-sz8;
+}
+
+.subtitle-sz1 {
+  @include typography.subtitle-sz1;
+}
+
+.subtitle-sz2 {
+  @include typography.subtitle-sz2;
+}
+
+.subtitle-sz3 {
+  @include typography.subtitle-sz3;
+}
+
+.subtitle-sz4 {
+  @include typography.subtitle-sz4;
+}
+
+.subtitle-sz5 {
+  @include typography.subtitle-sz5;
+}
+
+.letter {
+  font-family: var.$heading-font;
+  font-style: normal;
+  font-weight: var.$fw-regular;
+}
+
+.tit-legend {
+  font-family: var.$heading-font;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: var.$fw-xbold;
+  line-height: var.$lh-title;
+}
+
+p {
+  padding: 0;
+  line-height: var.$lh-text;
+  font-family: var.$font-default;
+}
+
+.text-sz1 {
+  @include typography.text-sz1;
+}
+
+.text-sz2 {
+  @include typography.text-sz2;
+}
+
+.text-sz3 {
+  @include typography.text-sz3;
+}
+
+.text-sz4 {
+  @include typography.text-sz4;
+}
+
+.text-sz5 {
+  @include typography.text-sz5;
+}
+
+.text-sz6 {
+  @include typography.text-sz6;
+}
+
+ul,
+ol {
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &.active {
+      font-weight: var.$fw-bold;
+    }
+  }
+}
+
+ol,
+ul {
+  ol,
+  ul {
+    padding-left: 1rem;
+  }
+}
+
+ul.list-bullet {
+  list-style: none;
+  li {
+    &:before {
+      content: "\25CF";
+    }
+  }
+}
+
+blockquote {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.5rem;
+
+  p {
+    @include typography.title-sz5;
+
+    &:before,
+    &:after {
+      content: '"';
+    }
+  }
+
+  footer {
+    @include typography.text-sz1;
+    font-weight: var.$fw-regular;
+    // text-align: right;
+
+    cite {
+      //   font-style: italic;
+    }
+  }
+}
+
+.light {
+  .link {
+    color: var.$text-secondary-light;
+  }
+
+  .link-default {
+    &:before {
+      background-color: var.$primary-light;
+    }
+  }
+
+  blockquote {
+    border-color: var.$state-disable-light;
+  }
+
+  ul,
+  ol {
+    a {
+      color: var.$primary-light;
+    }
+  }
+}
+
+.dark {
+  .link {
+    color: var.$text-secondary-dark;
+  }
+
+  .link-default {
+    &:before {
+      background-color: var.$primary-dark;
+    }
+  }
+
+  blockquote {
+    border-color: var.$state-disable-dark;
+  }
+
+  ul,
+  ol {
+    a {
+      color: var.$primary-dark;
+    }
+  }
+}
