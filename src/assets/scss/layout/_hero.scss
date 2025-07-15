@@ -1,0 +1,140 @@
+@use "../base/variables" as var;
+@use "../mixins/breakpoints" as breakpoint;
+@use "../mixins/typography" as typography;
+
+/*--------------------------------------------------------------
+# Hero
+--------------------------------------------------------------*/
+.sec_hero {
+  .container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    @include breakpoint.media-breakpoint-up(md) {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+
+    @include breakpoint.media-breakpoint-up(lg) {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+    .card-hero {
+      gap: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      background-color: var.$black;
+      border-radius: var.$radius-default;
+      overflow: hidden;
+      position: relative;
+
+      @include breakpoint.media-breakpoint-up(md) {
+        display: grid;
+        grid-auto-flow: dense;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas: "heroHeader heroHeader heroHeader heroHeader heroHeader heroHeader heroPic heroPic heroPic heroPic heroPic heroPic";
+      }
+
+      .header-logo {
+        position: absolute;
+        top: 1.5rem;
+        left: 1rem;
+        @include breakpoint.media-breakpoint-up(md) {
+          top: 2rem;
+          left: 2rem;
+        }
+        @include breakpoint.media-breakpoint-up(lg) {
+          top: 3rem;
+          left: 3rem;
+        }
+      }
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      gap: 1rem;
+      padding: 1.5rem 1rem;
+
+      @include breakpoint.media-breakpoint-up(md) {
+        grid-area: heroHeader;
+        gap: 1.5rem;
+        padding: 2rem 0 2rem 2rem;
+      }
+
+      @include breakpoint.media-breakpoint-up(lg) {
+        gap: 2rem;
+        padding: 3rem 0 3rem 3rem;
+      }
+
+      h1 {
+        font-weight: var.$fw-bold;
+        color: var.$text-primary-dark;
+        // text-align: center;
+        @include typography.hero-sz5;
+
+        @include breakpoint.media-breakpoint-up(md) {
+          @include typography.hero-sz4;
+        }
+
+        @include breakpoint.media-breakpoint-up(lg) {
+          @include typography.hero-sz3;
+          //   text-align: left;
+        }
+
+        @include breakpoint.media-breakpoint-up(xl) {
+          @include typography.hero-sz2;
+        }
+
+        @include breakpoint.media-breakpoint-up(xxl) {
+          @include typography.hero-sz1;
+        }
+
+        span {
+          //   display: block;
+          color: var.$primary-light;
+        }
+      }
+      p {
+        color: var.$text-primary-dark;
+        @include typography.text-sz4;
+
+        @include breakpoint.media-breakpoint-up(sm) {
+          @include typography.text-sz5;
+        }
+        @include breakpoint.media-breakpoint-up(md) {
+          @include typography.text-sz4;
+        }
+
+        @include breakpoint.media-breakpoint-up(lg) {
+          @include typography.text-sz3;
+        }
+
+        @include breakpoint.media-breakpoint-up(xl) {
+          @include typography.text-sz2;
+        }
+
+        @include breakpoint.media-breakpoint-up(xxl) {
+          @include typography.text-sz1;
+        }
+      }
+    }
+
+    .img-default {
+      display: flex;
+      height: fit-content;
+      flex: 0 0 auto;
+      @include breakpoint.media-breakpoint-up(md) {
+        grid-area: heroPic;
+      }
+      img {
+        object-fit: contain;
+        width: 100%;
+      }
+    }
+  }
+}

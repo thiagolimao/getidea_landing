@@ -1,0 +1,15 @@
+@use "../base/variables" as var;
+
+/*--------------------------------------------------------------
+# Components Images
+--------------------------------------------------------------*/
+picture.img-default {
+  overflow: hidden;
+  border-radius: var.$radius-default;
+  img {
+    min-width: 100%;
+    min-height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+}

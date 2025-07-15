@@ -12,23 +12,9 @@
 @use "base/page";
 
 // Components
-// @use "components/button";
-// @use "components/cards";
-// @use "components/dots";
-// @use "components/form";
-// @use "components/icons";
-// @use "components/images";
-// @use "components/nav";
-// @use "components/pagination";
+@use "components/button";
+@use "components/icons";
+@use "components/images";
 
 // Layout
-// @use "layout/header";
-// @use "layout/footer";
-// @use "layout/hero";
-// @use "layout/desafios";
-// @use "layout/sucesso";
-// @use "layout/diagnostico";
-// @use "layout/impacto";
-// @use "layout/faq";
-// @use "layout/contato";
-// @use "layout/sitemap";
+@use "layout/hero";
