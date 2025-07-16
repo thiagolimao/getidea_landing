@@ -51,3 +51,4 @@ yarn-error.log
 # Lint
 .eslintcache
 .stylelintcache
+src/assets/css/style.css
