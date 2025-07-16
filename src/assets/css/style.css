@@ -496,28 +496,28 @@ blockquote footer {
   color: #707070;
 }
 .light .link-default:before {
-  background-color: #24A8E0;
+  background-color: #24a8e0;
 }
 .light blockquote {
   border-color: #8e8e8e;
 }
 .light ul a,
 .light ol a {
-  color: #24A8E0;
+  color: #24a8e0;
 }
 
 .dark .link {
   color: #cccccc;
 }
 .dark .link-default:before {
-  background-color: #FA7A3C;
+  background-color: #fa7a3c;
 }
 .dark blockquote {
   border-color: #d1d3d4;
 }
 .dark ul a,
 .dark ol a {
-  color: #FA7A3C;
+  color: #fa7a3c;
 }
 
 /*--------------------------------------------------------------
@@ -844,16 +844,16 @@ picture img {
 }
 .btn.link-default.light {
   background: transparent;
-  color: #24A8E0;
+  color: #24a8e0;
   border: none;
 }
 .btn.link-default.light:hover, .btn.link-default.light:not(:disabled):not(.disabled):active {
   background: transparent;
-  color: #24A8E0;
+  color: #24a8e0;
 }
 .btn.link-default.light:focus, .btn.link-default.light:focus-visible, .btn.link-default.light:active, .btn.link-default.light.active {
   background: transparent;
-  color: #24A8E0;
+  color: #24a8e0;
   box-shadow: none;
 }
 .btn.link-default.light:disabled, .btn.link-default.light.disabled {
@@ -863,16 +863,16 @@ picture img {
 }
 .btn.link-default.dark {
   background: transparent;
-  color: #FA7A3C;
+  color: #fa7a3c;
   border: none;
 }
 .btn.link-default.dark:hover, .btn.link-default.dark:not(:disabled):not(.disabled):active {
   background: transparent;
-  color: #FA7A3C;
+  color: #fa7a3c;
 }
 .btn.link-default.dark:focus, .btn.link-default.dark:focus-visible, .btn.link-default.dark:active, .btn.link-default.dark.active {
   background: transparent;
-  color: #FA7A3C;
+  color: #fa7a3c;
   box-shadow: none;
 }
 .btn.link-default.dark:disabled, .btn.link-default.dark.disabled {
@@ -1054,7 +1054,7 @@ picture img {
 }
 .card.card-diagnostico header h2 span {
   display: block;
-  color: #24A8E0;
+  color: #24a8e0;
 }
 @media (min-width: 576px) {
   .card.card-diagnostico header h2 {
@@ -1151,7 +1151,7 @@ picture img {
   color: #f5f5f5;
 }
 .card.card-contato header h2 span {
-  color: #24A8E0;
+  color: #24a8e0;
 }
 @media (min-width: 576px) {
   .card.card-contato header h2 {
@@ -1452,14 +1452,14 @@ form .input-group textarea:disabled:-ms-input-placeholder {
 form .input-group input:focus, form .input-group input:valid,
 form .input-group textarea:focus,
 form .input-group textarea:valid {
-  border-color: #24A8E0;
+  border-color: #24a8e0;
   color: #f5f5f5;
 }
 form .input-group textarea {
   height: 116px;
 }
 form .input-group .error-message {
-  color: #A81F22;
+  color: #a81f22;
   font-size: 1rem;
 }
 form .input-group:not(.error) span[class*=message] {
@@ -1467,7 +1467,7 @@ form .input-group:not(.error) span[class*=message] {
 }
 form .input-group.error input,
 form .input-group.error textarea {
-  border-color: #A81F22;
+  border-color: #a81f22;
 }
 form .input-group.error span[class*=message] {
   display: flex;
@@ -1605,7 +1605,7 @@ form.form-impacto .btn {
   }
 }
 .sec_hero .container header h1 span {
-  color: #24A8E0;
+  color: #24a8e0;
 }
 .sec_hero .container header p {
   color: #f5f5f5;
@@ -1762,7 +1762,7 @@ form.form-impacto .btn {
   border-radius: 1rem;
   background-position: center;
   background-size: cover;
-  background-image: url("../img/desafios/img-desafios-sm.webp");
+  background-image: url("../img/desafios/bg-desafios-sm.webp");
   min-height: 172px;
 }
 @media (min-width: 768px) and (max-width: 991.98px) {

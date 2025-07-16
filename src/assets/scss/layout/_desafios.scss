@@ -99,7 +99,7 @@
 
       background-position: center;
       background-size: cover;
-      background-image: url("../img/desafios/img-desafios-sm.webp");
+      background-image: url(var.$img-desafios);
       min-height: 172px;
 
       @include breakpoint.media-breakpoint-only(md) {
@@ -107,19 +107,19 @@
       }
 
       @include breakpoint.media-breakpoint-up(md) {
-        background-image: url("../img/desafios/img-desafios-md.webp");
+        background-image: url(var.$img-desafios-md);
       }
 
       @include breakpoint.media-breakpoint-up(lg) {
-        background-image: url("../img/desafios/img-desafios-lg.webp");
+        background-image: url(var.$img-desafios-lg);
       }
 
       @include breakpoint.media-breakpoint-up(xl) {
-        background-image: url("../img/desafios/img-desafios-xl.webp");
+        background-image: url(var.$img-desafios-xl);
       }
 
       @include breakpoint.media-breakpoint-up(xxl) {
-        background-image: url("../img/desafios/img-desafios-xxl.webp");
+        background-image: url(var.$img-desafios-xxl);
       }
     }
   }
