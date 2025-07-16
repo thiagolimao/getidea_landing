@@ -1,14 +1,14 @@
 // General Colors
 /// Default color variables
 
-$blue-primary: #24A8E0;
+$blue-primary: #24a8e0;
 $blue-secondary: #375699;
 
-$green-primary: #8CAD07;
+$green-primary: #8cad07;
 $green-secondary: #236604;
 
-$red-primary: #FA7A3C;
-$red-secondary: #A81F22;
+$red-primary: #fa7a3c;
+$red-secondary: #a81f22;
 
 $gray-primary-light: #8e8e8e;
 $gray-secondary-light: #717171;
@@ -17,8 +17,8 @@ $gray-primary-dark: #d1d3d4;
 $gray-secondary-dark: #a0a0a0;
 $gray-tertiary-dark: #a3a3a3;
 
-$primary-light: $blue-primary;
-$secondary-light: $blue-secondary;
+$primary-light: $green-primary;
+$secondary-light: $green-secondary;
 $tertiary-light: #008071;
 
 $primary-dark: $red-primary;
@@ -130,16 +130,39 @@ $icon-arrow-type01: "data:image/svg+xml,%3Csvg%20width%3D%2216%22%20height%3D%22
 $icon-arrow-type02: "data:image/svg+xml,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M8%206.34179L2.04037%2012.1695C1.8133%2012.384%201.50918%2012.5026%201.1935%2012.5C0.877828%2012.4973%200.575858%2012.3735%200.352633%2012.1552C0.129408%2011.9369%200.00278865%2011.6416%204.5513e-05%2011.3329C-0.00269762%2011.0242%200.118655%2010.7268%200.337967%2010.5048L7.1488%203.8447C7.37457%203.62399%207.68075%203.5%208%203.5C8.31925%203.5%208.62543%203.62399%208.8512%203.8447L15.662%2010.5048C15.8813%2010.7268%2016.0027%2011.0242%2016%2011.3329C15.9972%2011.6416%2015.8706%2011.9369%2015.6474%2012.1552C15.4241%2012.3735%2015.1222%2012.4973%2014.8065%2012.5C14.4908%2012.5026%2014.1867%2012.384%2013.9596%2012.1695L8%206.34179Z%22%20fill%3D%22%23293189%22%2F%3E%0A%3C%2Fsvg%3E%0A";
 $icon-arrow-graphic: "data:image/svg+xml,%3Csvg%20width%3D%2248%22%20height%3D%2248%22%20viewBox%3D%220%200%2048%2048%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M45.75%2026.8125V12.75M45.75%2012.75H32.1562M45.75%2012.75L32.1562%2026.8125C29.7567%2029.2948%2028.5572%2030.5357%2027.0847%2030.6729C26.8411%2030.6957%2026.5964%2030.6957%2026.3528%2030.6729C24.8803%2030.5357%2023.6808%2029.2948%2021.2812%2026.8125C18.8817%2024.3302%2017.682%2023.0893%2016.2096%2022.9521C15.9662%2022.9293%2015.7213%2022.9293%2015.4779%2022.9521C14.0055%2023.0893%2012.8057%2024.3302%2010.4062%2026.8125L2.25%2035.25%22%20stroke%3D%22%233B5999%22%20stroke-width%3D%224.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%0A%3C%2Fsvg%3E";
 
-
 /// Backgrounds
-$bg-diagnostico-xxl: "../img/diagnostico/bg-diagnostico-xxl.webp";
-$bg-diagnostico-xl: "../img/diagnostico/bg-diagnostico-xl.webp";
-$bg-diagnostico-lg: "../img/diagnostico/bg-diagnostico-lg.webp";
-$bg-diagnostico-md: "../img/diagnostico/bg-diagnostico-md.webp";
-$bg-diagnostico: "../img/diagnostico/bg-diagnostico-sm.webp";
+$bg-diagnostico-xxl: "https://placehold.co/1400x463/000000/0E1015/webp";
+$bg-diagnostico-xl: "https://placehold.co/1140x449/000000/0E1015/webp";
+$bg-diagnostico-lg: "https://placehold.co/944x383/000000/0E1015/webp";
+$bg-diagnostico-md: "https://placehold.co/704x445/000000/0E1015/webp";
+$bg-diagnostico: "https://placehold.co/343x386/000000/0E1015/webpp";
 
-$bg-contato-xxl: "../img/contato/bg-contato-xxl.webp";
-$bg-contato-xl: "../img/contato/bg-contato-xl.webp";
-$bg-contato-lg: "../img/contato/bg-contato-lg.webp";
-$bg-contato-md: "../img/contato/bg-contato-md.webp";
-$bg-contato: "../img/contato/bg-contato-sm.webp";
+$bg-contato-xxl: "https://placehold.co/1400x375/000000/0E1015/webp";
+$bg-contato-xl: "https://placehold.co/1140x375/000000/0E1015/webp";
+$bg-contato-lg: "https://placehold.co/944x327/000000/0E1015/webp";
+$bg-contato-md: "https://placehold.co/708x263/000000/0E1015/webp";
+$bg-contato: "https://placehold.co/343x220/000000/0E1015/webp";
+
+$img-desafios-xxl: "https://placehold.co/850x900/000000/0E1015/webp";
+$img-desafios-xl: "https://placehold.co/790x527/000000/0E1015/webp";
+$img-desafios-lg: "https://placehold.co/742x495/000000/0E1015/webp";
+$img-desafios-md: "https://placehold.co/704x251/000000/0E1015/webp";
+$img-desafios: "https://placehold.co/343x172/000000/0E1015/webp";
+
+// $bg-desafios-xxl: "../img/desafios/img-desafios-xxl.webp";
+// $img-desafios-xl: "../img/desafios/img-desafios-xl.webp";
+// $img-desafios-lg: "../img/desafios/img-desafios-lg.webp";
+// $img-desafios-md: "../img/desafios/img-desafios-md.webp";
+// $img-desafios: "../img/desafios/bg-desafios-sm.webp";
+
+// $bg-diagnostico-xxl: "../img/diagnostico/bg-diagnostico-xxl.webp";
+// $bg-diagnostico-xl: "../img/diagnostico/bg-diagnostico-xl.webp";
+// $bg-diagnostico-lg: "../img/diagnostico/bg-diagnostico-lg.webp";
+// $bg-diagnostico-md: "../img/diagnostico/bg-diagnostico-md.webp";
+// $bg-diagnostico: "../img/diagnostico/bg-diagnostico-sm.webp";
+
+// $bg-contato-xxl: "../img/contato/bg-contato-xxl.webp";
+// $bg-contato-xl: "../img/contato/bg-contato-xl.webp";
+// $bg-contato-lg: "../img/contato/bg-contato-lg.webp";
+// $bg-contato-md: "../img/contato/bg-contato-md.webp";
+// $bg-contato: "../img/contato/bg-contato-sm.webp";
