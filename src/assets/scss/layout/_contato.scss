@@ -1,0 +1,17 @@
+@use "../base/variables" as var;
+@use "../mixins/breakpoints" as breakpoint;
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.sec_contato {
+  .container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    @include breakpoint.media-breakpoint-up(md) {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+  }
+}
