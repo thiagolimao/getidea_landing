@@ -1,5 +1,5 @@
 /**
-* Template Name: startups - v1.0.0
+* Template Name: lps_getidea - v1.0.0
 * Template URL: http://thiagolima.com
 * Author: Limão Acidez Tecnológica
 * License: MIT
@@ -285,7 +285,7 @@ h6 {
   }
 }
 .title-default span {
-  color: #3b5999;
+  color: #375699;
 }
 
 .subtitle-default {
@@ -496,28 +496,28 @@ blockquote footer {
   color: #707070;
 }
 .light .link-default:before {
-  background-color: #2aace3;
+  background-color: #24A8E0;
 }
 .light blockquote {
   border-color: #8e8e8e;
 }
 .light ul a,
 .light ol a {
-  color: #2aace3;
+  color: #24A8E0;
 }
 
 .dark .link {
   color: #cccccc;
 }
 .dark .link-default:before {
-  background-color: #f26724;
+  background-color: #FA7A3C;
 }
 .dark blockquote {
   border-color: #d1d3d4;
 }
 .dark ul a,
 .dark ol a {
-  color: #f26724;
+  color: #FA7A3C;
 }
 
 /*--------------------------------------------------------------
@@ -844,16 +844,16 @@ picture img {
 }
 .btn.link-default.light {
   background: transparent;
-  color: #2aace3;
+  color: #24A8E0;
   border: none;
 }
 .btn.link-default.light:hover, .btn.link-default.light:not(:disabled):not(.disabled):active {
   background: transparent;
-  color: #2aace3;
+  color: #24A8E0;
 }
 .btn.link-default.light:focus, .btn.link-default.light:focus-visible, .btn.link-default.light:active, .btn.link-default.light.active {
   background: transparent;
-  color: #2aace3;
+  color: #24A8E0;
   box-shadow: none;
 }
 .btn.link-default.light:disabled, .btn.link-default.light.disabled {
@@ -863,16 +863,16 @@ picture img {
 }
 .btn.link-default.dark {
   background: transparent;
-  color: #f26724;
+  color: #FA7A3C;
   border: none;
 }
 .btn.link-default.dark:hover, .btn.link-default.dark:not(:disabled):not(.disabled):active {
   background: transparent;
-  color: #f26724;
+  color: #FA7A3C;
 }
 .btn.link-default.dark:focus, .btn.link-default.dark:focus-visible, .btn.link-default.dark:active, .btn.link-default.dark.active {
   background: transparent;
-  color: #f26724;
+  color: #FA7A3C;
   box-shadow: none;
 }
 .btn.link-default.dark:disabled, .btn.link-default.dark.disabled {
@@ -968,7 +968,7 @@ picture img {
 .card.card-sucesso {
   flex-direction: column;
   gap: 1rem;
-  background-color: rgba(59, 89, 153, 0.16);
+  background-color: rgba(55, 86, 153, 0.16);
   border-radius: 1rem;
   padding: 1.5rem;
   height: 100%;
@@ -979,7 +979,7 @@ picture img {
   }
 }
 .card.card-sucesso i[class*=icon] {
-  color: #3b5999;
+  color: #375699;
   height: 2rem;
   width: 2rem;
 }
@@ -1054,7 +1054,7 @@ picture img {
 }
 .card.card-diagnostico header h2 span {
   display: block;
-  color: #2aace3;
+  color: #24A8E0;
 }
 @media (min-width: 576px) {
   .card.card-diagnostico header h2 {
@@ -1151,7 +1151,7 @@ picture img {
   color: #f5f5f5;
 }
 .card.card-contato header h2 span {
-  color: #2aace3;
+  color: #24A8E0;
 }
 @media (min-width: 576px) {
   .card.card-contato header h2 {
@@ -1225,10 +1225,10 @@ picture img {
 }
 .dots .dots-item.active button {
   cursor: default;
-  background-color: #3b5999;
+  background-color: #375699;
 }
 .dots .dots-item:hover button {
-  background-color: #3b5999;
+  background-color: #375699;
 }
 
 /*--------------------------------------------------------------
@@ -1452,14 +1452,14 @@ form .input-group textarea:disabled:-ms-input-placeholder {
 form .input-group input:focus, form .input-group input:valid,
 form .input-group textarea:focus,
 form .input-group textarea:valid {
-  border-color: #2aace3;
+  border-color: #24A8E0;
   color: #f5f5f5;
 }
 form .input-group textarea {
   height: 116px;
 }
 form .input-group .error-message {
-  color: #9e1d20;
+  color: #A81F22;
   font-size: 1rem;
 }
 form .input-group:not(.error) span[class*=message] {
@@ -1467,7 +1467,7 @@ form .input-group:not(.error) span[class*=message] {
 }
 form .input-group.error input,
 form .input-group.error textarea {
-  border-color: #9e1d20;
+  border-color: #A81F22;
 }
 form .input-group.error span[class*=message] {
   display: flex;
@@ -1605,7 +1605,7 @@ form.form-impacto .btn {
   }
 }
 .sec_hero .container header h1 span {
-  color: #2aace3;
+  color: #24A8E0;
 }
 .sec_hero .container header p {
   color: #f5f5f5;
@@ -2025,7 +2025,7 @@ form.form-impacto .btn {
   display: flex;
   align-items: center;
   gap: 1rem;
-  background-color: rgba(59, 89, 153, 0.16);
+  background-color: rgba(55, 86, 153, 0.16);
   border-radius: 1rem;
   padding: 1.5rem;
   height: 100%;
@@ -2036,7 +2036,7 @@ form.form-impacto .btn {
   }
 }
 .sec_impacto .container .cont-left .list-dados li i[class*=icon] {
-  color: #3b5999;
+  color: #375699;
   height: 2rem;
   width: 2rem;
 }
@@ -2146,7 +2146,7 @@ form.form-impacto .btn {
   height: 100%;
 }
 .sec_faq .container .list-faq li .box-arrow {
-  background-color: rgba(59, 89, 153, 0.16);
+  background-color: rgba(55, 86, 153, 0.16);
   border-radius: 0.5rem;
   padding: 0.75rem;
   height: 2.5rem;
@@ -2159,7 +2159,7 @@ form.form-impacto .btn {
   }
 }
 .sec_faq .container .list-faq li .box-arrow i[class*=icon] {
-  color: #3b5999;
+  color: #375699;
   height: 1rem;
   width: 1rem;
 }
