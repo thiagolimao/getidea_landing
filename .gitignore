@@ -43,6 +43,9 @@ sass-cache
 dist
 dist/*
 
+src/assets/css/
+src/assets/css/*
+
 package-lock.json
 yarn.lock
 yarn-error.log
@@ -51,4 +54,3 @@ yarn-error.log
 # Lint
 .eslintcache
 .stylelintcache
-src/assets/css/style.css
