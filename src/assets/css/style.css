@@ -1769,3 +1769,17 @@ picture.img-default img {
     display: none;
   }
 }
+
+/*--------------------------------------------------------------
+# Diagnostico
+--------------------------------------------------------------*/
+.sec_diagnostico .container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .sec_diagnostico .container {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
