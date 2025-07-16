@@ -43,8 +43,10 @@ sass-cache
 dist
 dist/*
 
-src/assets/css/
-src/assets/css/*
+css/
+css/*
+*.css
+style.css
 
 package-lock.json
 yarn.lock
