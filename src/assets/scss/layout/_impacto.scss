@@ -88,7 +88,7 @@
 
           gap: 1rem;
 
-          background-color: rgba(var.$green-secondary, 16%);
+          background-color: rgba(var.$red-secondary, 16%);
           border-radius: var.$radius-default;
           padding: 1.5rem;
 
@@ -99,7 +99,7 @@
           }
 
           i[class*="icon"] {
-            color: var.$green-secondary;
+            color: var.$red-secondary;
             height: 2rem;
             width: 2rem;
           }

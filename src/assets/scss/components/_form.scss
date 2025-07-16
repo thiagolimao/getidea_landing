@@ -80,7 +80,7 @@ form {
 
       &:focus,
       &:valid {
-        border-color: var.$green-primary;
+        border-color: var.$red-primary;
         color: var.$text-primary-dark;
       }
     }
