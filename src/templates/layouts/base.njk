@@ -15,7 +15,7 @@
         {% include "includes/meta/_meta-twitter.njk" %}
 
         <!-- Mobile Metas -->
-        <meta name="apple-mobile-web-app-title" content="{{ projectName }}">
+        <meta name="apple-mobile-web-app-title" content="getIdea">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
@@ -24,7 +24,7 @@
         <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
         <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg" />
         <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" />
-        <meta name="apple-mobile-web-app-title" content="{{ projectName }}" />
+        <meta name="apple-mobile-web-app-title" content="getIdea" />
         <link rel="manifest" href="/assets/img/favicon/site.webmanifest" />
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
@@ -43,14 +43,14 @@
             {
                 "@context": "https://schema.org",
                 "@type": "WebPage",
-                "name": "_title_ Lorem ipsul _title_",
-                "url": "https://{{ projectName }}-front.{{ serverName }}/lp-startups-campanha01.html",
-                "description": "_description_ Lorem ipsul _description_",
-                "keywords": "_keywords_ Lorem ipsul _keywords_",
+                "name": "Getidea: Soluções Digitais para Startups - Acelere Seu Crescimento",
+                "url": "https://getidea-front.surge.sh/lp-startups-campanha01.html",
+                "description": "A Getidea oferece soluções digitais sob medida para startups: desenvolvimento de MVPs, UX/UI, marketing digital e mais. Acelere seu crescimento!",
+                "keywords": "startup, MVP, UX/UI, marketing digital, inovação, tecnologia, escalabilidade, crescimento",
                 "publisher": {
                     "@type": "Organization",
                     "name": "Limão Acidez Tecnológica",
-                    "logo": "https://{{ projectName }}-front.{{ serverName }}/assets/img/social/logo_profile.png"
+                    "logo": "https://getidea-front.surge.sh/assets/img/social/logo_profile.png"
                 }
             }
 
@@ -64,6 +64,8 @@
     <body>
 
         {% block content %}{% endblock %}
+
+        {% include "includes/footer.njk" %}
 
         <!-- Vendor JS Files -->
 

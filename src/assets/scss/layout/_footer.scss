@@ -1,0 +1,139 @@
+@use "../base/variables" as var;
+@use "../mixins/breakpoints" as breakpoint;
+@use "../mixins/typography" as typography;
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  //   padding-top: calc(var.$pad-space/2);
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+
+    padding-top: 3.75rem;
+
+    @include breakpoint.media-breakpoint-up(xl) {
+      padding-top: 5rem;
+    }
+
+    .top-footer {
+      gap: 2rem;
+      display: flex;
+      flex-direction: column;
+
+      @include breakpoint.media-breakpoint-up(md) {
+        display: grid;
+        grid-auto-flow: dense;
+
+        grid-template-columns: repeat(8, 1fr);
+
+        grid-template-areas:
+          "footerGet footerGet footerGet footerGet footerGet footerMail footerMail footerMail"
+          "footerGet footerGet footerGet footerGet footerGet footerSocial footerSocial footerSocial";
+      }
+
+      @include breakpoint.media-breakpoint-up(lg) {
+        grid-template-columns: repeat(12, 1fr);
+
+        grid-template-areas: "footerGet footerGet footerGet footerGet footerGet . footerMail footerMail footerMail  footerSocial footerSocial footerSocial";
+      }
+
+      @include breakpoint.media-breakpoint-up(xxl) {
+        grid-template-areas: "footerGet footerGet footerGet footerGet . footerMail footerMail footerMail . footerSocial footerSocial footerSocial";
+      }
+
+      h2 {
+        @include typography.title-sz7;
+        font-weight: var.$fw-bold;
+        color: var.$text-primary-light;
+        @include breakpoint.media-breakpoint-up(sm) {
+          @include typography.title-sz6;
+        }
+        @include breakpoint.media-breakpoint-up(md) {
+          @include typography.title-sz5;
+        }
+      }
+
+      .footer-getidea {
+        grid-area: footerGet;
+        .footer-logo {
+          display: block;
+          margin-bottom: 1rem;
+        }
+      }
+      .footer-mail {
+        grid-area: footerMail;
+        .footer-links:not(last-child) {
+          margin-bottom: 1.5rem;
+        }
+      }
+      .footer-social {
+        grid-area: footerSocial;
+      }
+    }
+    .nav {
+      display: flex;
+      flex-direction: column;
+      //   gap: 1.5rem;
+      .nav-link {
+        @include typography.text-sz4;
+        padding: 1rem 0;
+        border-bottom: solid 1px var.$bg-primary-dark-opacity;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var.$text-primary-light;
+        opacity: 0.7;
+        transition: opacity 0.5s ease;
+
+        .label-link,
+        .circle-link {
+          transition: transform 0.5s ease-out;
+        }
+        .circle-link {
+          border: solid 1px var.$bg-primary-dark-opacity;
+          border-radius: 50%;
+          width: 1.5rem;
+          height: 1.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .icon {
+            height: 0.675rem;
+            width: 0.675rem;
+            color: var.$text-primary-light;
+          }
+        }
+        &:hover {
+          text-decoration: none;
+          opacity: 1;
+          .label-link {
+            transform: translateX(1rem);
+          }
+          .circle-link {
+            border: solid 1px var.$text-primary-light;
+            transform: translateX(-1rem);
+          }
+        }
+      }
+    }
+
+    .bottom-footer {
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+
+      border-top: solid 1px var.$bg-primary-dark-opacity;
+
+      .copy {
+        p {
+          @include typography.text-sz5;
+          text-align: center;
+          color: var.$text-secondary-light;
+        }
+      }
+    }
+  }
+}

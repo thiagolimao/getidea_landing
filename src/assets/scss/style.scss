@@ -18,7 +18,6 @@
 @use "components/icons";
 @use "components/images";
 @use "components/pagination";
-// @use "components/nav";
 @use "components/form";
 
 // Layout
@@ -29,6 +28,4 @@
 @use "layout/impacto";
 @use "layout/faq";
 @use "layout/contato";
-// @use "layout/sitemap";
-// @use "layout/header";
-// @use "layout/footer";
+@use "layout/footer";
