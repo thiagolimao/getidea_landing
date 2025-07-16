@@ -1,0 +1,170 @@
+@use "../base/variables" as var;
+@use "../mixins/breakpoints" as breakpoint;
+@use "../mixins/typography" as typography;
+
+/*--------------------------------------------------------------
+# Desafios
+--------------------------------------------------------------*/
+.sec_faq {
+  .container {
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+
+    @include breakpoint.media-breakpoint-up(md) {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      gap: 4rem;
+    }
+
+    @include breakpoint.media-breakpoint-up(lg) {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
+    header {
+      gap: 1rem;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      @include breakpoint.media-breakpoint-up(lg) {
+        display: grid;
+        align-items: center;
+        grid-auto-flow: dense;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas:
+          "headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerTit . ."
+          "headerIntro headerIntro headerIntro headerIntro headerIntro headerIntro headerIntro headerIntro headerIntro headerIntro . .";
+      }
+
+      .title-default {
+        grid-area: headerTit;
+        // @include typography.title-sz4;
+        // @include breakpoint.media-breakpoint-up(sm) {
+        //   @include typography.title-sz3;
+        // }
+        // @include breakpoint.media-breakpoint-up(md) {
+        //   @include typography.title-sz3;
+        // }
+
+        // @include breakpoint.media-breakpoint-up(lg) {
+        //   @include typography.title-sz3;
+        // }
+
+        // @include breakpoint.media-breakpoint-up(xl) {
+        //   @include typography.title-sz2;
+        // }
+
+        // @include breakpoint.media-breakpoint-up(xxl) {
+        //   @include typography.title-sz1;
+        // }
+      }
+      .text-intro {
+        grid-area: headerIntro;
+        // @include typography.text-sz3;
+        // @include breakpoint.media-breakpoint-up(sm) {
+        //   @include typography.text-sz3;
+        // }
+        // @include breakpoint.media-breakpoint-up(md) {
+        //   @include typography.text-sz3;
+        // }
+
+        // @include breakpoint.media-breakpoint-up(lg) {
+        //   @include typography.text-sz3;
+        // }
+
+        // @include breakpoint.media-breakpoint-up(xl) {
+        //   @include typography.text-sz2;
+        // }
+
+        // @include breakpoint.media-breakpoint-up(xxl) {
+        //   @include typography.text-sz1;
+        // }
+      }
+    }
+
+    .list-faq {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      @include breakpoint.media-breakpoint-up(md) {
+        display: grid;
+        grid-auto-flow: dense;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem 1.5rem;
+        justify-content: start;
+      }
+      @include breakpoint.media-breakpoint-up(xl) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      li {
+        display: flex;
+
+        gap: 1.5rem;
+        height: 100%;
+
+        .box-arrow {
+          background-color: rgba(var.$blue-secondary, 16%);
+          border-radius: calc(var.$radius-default/2);
+          padding: 0.75rem;
+          height: 2.5rem;
+          width: 2.5rem;
+
+          @include breakpoint.media-breakpoint-up(md) {
+            height: 3rem;
+            width: 3rem;
+          }
+
+          i[class*="icon"] {
+            color: var.$blue-secondary;
+            height: 1rem;
+            width: 1rem;
+            @include breakpoint.media-breakpoint-up(md) {
+              height: 1.5rem;
+              width: 1.5rem;
+            }
+          }
+        }
+
+        .faq-text {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          h3 {
+            @include typography.title-sz5;
+            font-weight: var.$fw-semi;
+
+            @include breakpoint.media-breakpoint-up(sm) {
+              @include typography.title-sz5;
+            }
+          }
+          p {
+            @include typography.text-sz3;
+            @include breakpoint.media-breakpoint-up(sm) {
+              @include typography.text-sz3;
+            }
+            &:not(:last-child) {
+              margin-bottom: 1rem;
+            }
+          }
+          .btn {
+            @include breakpoint.media-breakpoint-down(lg) {
+              min-width: 100%;
+            }
+            @include breakpoint.media-breakpoint-only(xl) {
+              i[class*="icon"] {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

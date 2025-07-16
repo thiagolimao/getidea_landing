@@ -2076,3 +2076,131 @@ form.form-impacto .btn {
     grid-template-areas: "formTitle formTitle formTitle formTitle formTitle formTitle" "formName formName formName formEmail formEmail formEmail" "formWpp formWpp formWpp formStartup formStartup formStartup" "formMsg formMsg formMsg formMsg formMsg formMsg" "formLegal formLegal formLegal formLegal formLegal formLegal" "formBtn formBtn formBtn formBtn formBtn formBtn";
   }
 }
+/*--------------------------------------------------------------
+# Desafios
+--------------------------------------------------------------*/
+.sec_faq .container {
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+@media (min-width: 768px) {
+  .sec_faq .container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    gap: 4rem;
+  }
+}
+@media (min-width: 992px) {
+  .sec_faq .container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+.sec_faq .container header {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+@media (min-width: 992px) {
+  .sec_faq .container header {
+    display: grid;
+    align-items: center;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: "headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerTit . ." "headerIntro headerIntro headerIntro headerIntro headerIntro headerIntro headerIntro headerIntro headerIntro headerIntro . .";
+  }
+}
+.sec_faq .container header .title-default {
+  grid-area: headerTit;
+}
+.sec_faq .container header .text-intro {
+  grid-area: headerIntro;
+}
+.sec_faq .container .list-faq {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .sec_faq .container .list-faq {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem 1.5rem;
+    justify-content: start;
+  }
+}
+@media (min-width: 1200px) {
+  .sec_faq .container .list-faq {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.sec_faq .container .list-faq li {
+  display: flex;
+  gap: 1.5rem;
+  height: 100%;
+}
+.sec_faq .container .list-faq li .box-arrow {
+  background-color: rgba(59, 89, 153, 0.16);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+@media (min-width: 768px) {
+  .sec_faq .container .list-faq li .box-arrow {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+.sec_faq .container .list-faq li .box-arrow i[class*=icon] {
+  color: #3b5999;
+  height: 1rem;
+  width: 1rem;
+}
+@media (min-width: 768px) {
+  .sec_faq .container .list-faq li .box-arrow i[class*=icon] {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+.sec_faq .container .list-faq li .faq-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.sec_faq .container .list-faq li .faq-text h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+@media (min-width: 576px) {
+  .sec_faq .container .list-faq li .faq-text h3 {
+    font-size: 1.25rem;
+  }
+}
+.sec_faq .container .list-faq li .faq-text p {
+  font-size: 1.125rem;
+}
+@media (min-width: 576px) {
+  .sec_faq .container .list-faq li .faq-text p {
+    font-size: 1.125rem;
+  }
+}
+.sec_faq .container .list-faq li .faq-text p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+@media (max-width: 991.98px) {
+  .sec_faq .container .list-faq li .faq-text .btn {
+    min-width: 100%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .sec_faq .container .list-faq li .faq-text .btn i[class*=icon] {
+    display: none;
+  }
+}
