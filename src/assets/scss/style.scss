@@ -19,14 +19,14 @@
 @use "components/images";
 @use "components/pagination";
 // @use "components/nav";
-// @use "components/form";
+@use "components/form";
 
 // Layout
 @use "layout/hero";
 @use "layout/desafios";
 @use "layout/sucesso";
 @use "layout/diagnostico";
-// @use "layout/impacto";
+@use "layout/impacto";
 // @use "layout/faq";
 // @use "layout/contato";
 // @use "layout/sitemap";
