@@ -956,6 +956,282 @@ picture img {
 }
 
 /*--------------------------------------------------------------
+# Components Cards
+--------------------------------------------------------------*/
+.card {
+  position: relative;
+  text-decoration: none;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+.card.card-sucesso {
+  flex-direction: column;
+  gap: 1rem;
+  background-color: rgba(59, 89, 153, 0.16);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .card.card-sucesso {
+    padding: 1.5rem;
+  }
+}
+.card.card-sucesso i[class*=icon] {
+  color: #3b5999;
+  height: 2rem;
+  width: 2rem;
+}
+@media (min-width: 992px) {
+  .card.card-sucesso i[class*=icon] {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+.card.card-sucesso p {
+  font-size: 1.125rem;
+}
+.card.card-diagnostico {
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-color: #fefefe;
+  background-image: url("../img/diagnostico/bg-diagnostico-sm.webp");
+  padding: 1.5rem 1rem;
+  border-radius: 1rem;
+}
+@media (min-width: 576px) {
+  .card.card-diagnostico {
+    padding: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .card.card-diagnostico {
+    background-image: url("../img/diagnostico/bg-diagnostico-md.webp");
+    padding: 3rem;
+  }
+}
+@media (min-width: 992px) {
+  .card.card-diagnostico {
+    background-image: url("../img/diagnostico/bg-diagnostico-lg.webp");
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .card.card-diagnostico {
+    padding: 4rem;
+    background-image: url("../img/diagnostico/bg-diagnostico-xl.webp");
+    grid-template-areas: ". headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent .";
+  }
+}
+@media (min-width: 1400px) {
+  .card.card-diagnostico {
+    background-image: url("../img/diagnostico/bg-diagnostico-xxl.webp");
+    grid-template-areas: ". . headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent . .";
+  }
+}
+.card.card-diagnostico header {
+  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: headerContent;
+  max-width: 100%;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .card.card-diagnostico header {
+    gap: 2rem;
+  }
+}
+.card.card-diagnostico header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f5f5f5;
+}
+.card.card-diagnostico header h2 span {
+  display: block;
+  color: #2aace3;
+}
+@media (min-width: 576px) {
+  .card.card-diagnostico header h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .card.card-diagnostico header h2 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .card.card-diagnostico header h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .card.card-diagnostico header h2 {
+    font-size: 2.5rem;
+  }
+}
+.card.card-diagnostico header p {
+  color: #f5f5f5;
+  font-size: 1.125rem;
+}
+@media (min-width: 768px) {
+  .card.card-diagnostico header p {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 992px) {
+  .card.card-diagnostico header p {
+    font-size: 1.375rem;
+  }
+}
+@media (min-width: 576px) {
+  .card.card-diagnostico header p strong {
+    display: block;
+  }
+}
+.card.card-contato {
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-color: #fefefe;
+  background-image: url("../img/contato/bg-contato-sm.webp");
+  padding: 1.5rem 1rem;
+  border-radius: 1rem;
+}
+@media (min-width: 576px) {
+  .card.card-contato {
+    padding: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .card.card-contato {
+    background-image: url("../img/contato/bg-contato-md.webp");
+    padding: 3rem;
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: "headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent .";
+  }
+}
+@media (min-width: 992px) {
+  .card.card-contato {
+    background-image: url("../img/contato/bg-contato-lg.webp");
+    padding: 4rem;
+    grid-template-areas: "headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent . .";
+  }
+}
+@media (min-width: 1200px) {
+  .card.card-contato {
+    background-image: url("../img/contato/bg-contato-xl.webp");
+    grid-template-areas: "headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent . . . .";
+  }
+}
+@media (min-width: 1400px) {
+  .card.card-contato {
+    background-image: url("../img/contato/bg-contato-xxl.webp");
+    grid-template-areas: "headerContent headerContent headerContent headerContent headerContent headerContent headerContent . . . . .";
+  }
+}
+.card.card-contato header {
+  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  grid-area: headerContent;
+  max-width: 100%;
+}
+.card.card-contato header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f5f5f5;
+}
+.card.card-contato header h2 span {
+  color: #2aace3;
+}
+@media (min-width: 576px) {
+  .card.card-contato header h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .card.card-contato header h2 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .card.card-contato header h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .card.card-contato header h2 {
+    font-size: 2.5rem;
+  }
+}
+.card.card-contato header p {
+  color: #f5f5f5;
+  font-size: 1.125rem;
+}
+@media (min-width: 768px) {
+  .card.card-contato header p {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 992px) {
+  .card.card-contato header p {
+    font-size: 1.375rem;
+  }
+}
+@media (min-width: 576px) {
+  .card.card-contato header p strong {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .card.card-contato header .btn {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+}
+
+/*--------------------------------------------------------------
+# Components Dots
+--------------------------------------------------------------*/
+.dots {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.dots .dots-item {
+  width: 0.575rem;
+  height: 0.575rem;
+  display: inline-flex;
+}
+.dots .dots-item button {
+  width: 0.575rem;
+  height: 0.575rem;
+  display: inline-flex;
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+  text-indent: -9999px;
+  cursor: pointer;
+  background-color: #8e8e8e;
+}
+.dots .dots-item.active button {
+  cursor: default;
+  background-color: #3b5999;
+}
+.dots .dots-item:hover button {
+  background-color: #3b5999;
+}
+
+/*--------------------------------------------------------------
 # Components Icons
 --------------------------------------------------------------*/
 .icon {
@@ -1055,6 +1331,25 @@ picture.img-default img {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+/*--------------------------------------------------------------
+# Pagination
+--------------------------------------------------------------*/
+.footer-pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.625rem;
+}
+.footer-pagination .pagination {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+}
+.footer-pagination .pagination button[class*=swiper-button-]::after, .footer-pagination .pagination button[class*=swiper-button-]::before {
+  display: none;
 }
 
 /*--------------------------------------------------------------
@@ -1340,5 +1635,137 @@ picture.img-default img {
 @media (min-width: 1400px) {
   .sec_desafios .container .img-default {
     background-image: url("../img/desafios/img-desafios-xxl.webp");
+  }
+}
+
+/*--------------------------------------------------------------
+# Sucesso
+--------------------------------------------------------------*/
+.sec_sucesso .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+@media (min-width: 768px) {
+  .sec_sucesso .container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+@media (min-width: 992px) {
+  .sec_sucesso .container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+.sec_sucesso .container header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+@media (min-width: 768px) {
+  .sec_sucesso .container header {
+    display: grid;
+    align-items: center;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: "headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerTit ." "headerText headerText headerText headerText headerText headerText headerText headerText headerText headerText headerText .";
+  }
+}
+@media (min-width: 992px) {
+  .sec_sucesso .container header {
+    grid-template-areas: "headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerTit . . . ." "headerText headerText headerText headerText headerText headerText headerText headerText headerText . . .";
+  }
+}
+@media (min-width: 1200px) {
+  .sec_sucesso .container header {
+    grid-template-areas: "headerTit headerTit headerTit headerTit headerTit headerTit headerText headerText headerText headerText headerText headerText";
+  }
+}
+@media (min-width: 1400px) {
+  .sec_sucesso .container header {
+    grid-template-areas: "headerTit headerTit headerTit headerTit headerTit headerTit . headerText headerText headerText headerText headerText";
+  }
+}
+.sec_sucesso .container header .title-default {
+  grid-area: headerTit;
+}
+.sec_sucesso .container header .text-intro {
+  grid-area: headerText;
+}
+.sec_sucesso .container header .cont-btn {
+  grid-area: headerBtn;
+  display: flex;
+}
+@media (min-width: 768px) {
+  .sec_sucesso .container header .cont-btn {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}
+.sec_sucesso .container .cont-cards {
+  position: relative;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 0;
+  grid-template-columns: repeat(auto-fit, minmax(90%, auto));
+}
+.sec_sucesso .container .cont-cards.swiper .swiper-wrapper {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .sec_sucesso .container .cont-cards.swiper .swiper-wrapper {
+    gap: 0;
+    flex-direction: row;
+  }
+}
+.sec_sucesso .container .cont-cards.swiper .swiper-slide {
+  flex-shrink: 0;
+}
+@media (min-width: 768px) {
+  .sec_sucesso .container .cont-cards *[class*=slide] {
+    grid-template-columns: repeat(auto-fit, minmax(auto, 333px));
+  }
+  .sec_sucesso .container .cont-cards *[class*=slide] > *[class*=card-] {
+    max-width: 333px;
+  }
+}
+@media (min-width: 992px) {
+  .sec_sucesso .container .cont-cards *[class*=slide] {
+    grid-template-columns: repeat(auto-fit, minmax(auto, 294px));
+  }
+  .sec_sucesso .container .cont-cards *[class*=slide] > *[class*=card-] {
+    max-width: 294px;
+  }
+}
+@media (min-width: 1200px) {
+  .sec_sucesso .container .cont-cards *[class*=slide] {
+    grid-template-columns: repeat(auto-fit, minmax(auto, 354px));
+  }
+  .sec_sucesso .container .cont-cards *[class*=slide] > *[class*=card-] {
+    max-width: 354px;
+  }
+}
+@media (min-width: 1400px) {
+  .sec_sucesso .container .cont-cards *[class*=slide] {
+    grid-template-columns: repeat(auto-fit, minmax(auto, 325px));
+  }
+  .sec_sucesso .container .cont-cards *[class*=slide] > *[class*=card-] {
+    max-width: 325px;
+  }
+}
+@media (max-width: 767.98px) {
+  .sec_sucesso .container .cont-cards *[class*=slide] > *[class*=card-] .img-default img {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+@media (max-width: 767.98px) {
+  .sec_sucesso .container .footer-pagination {
+    display: none;
   }
 }

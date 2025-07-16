@@ -1,0 +1,25 @@
+@use "../base/variables" as var;
+@use "../mixins/typography" as typography;
+
+/*--------------------------------------------------------------
+# Pagination
+--------------------------------------------------------------*/
+.footer-pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.625rem;
+
+  .pagination {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    button[class*="swiper-button-"] {
+      &::after,
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

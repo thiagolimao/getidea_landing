@@ -1,0 +1,43 @@
+@use "../base/variables" as var;
+
+/*--------------------------------------------------------------
+# Components Dots
+--------------------------------------------------------------*/
+.dots {
+  display: flex;
+  align-items: center;
+
+  gap: 0.5rem;
+  //   border-radius: 0.5rem;
+  //   padding: 0.25rem 0.5rem;
+
+  //   height: 1rem;
+  //   background-color: var.$bg-secondary-light;
+  .dots-item {
+    width: 0.575rem;
+    height: 0.575rem;
+    display: inline-flex;
+    button {
+      width: 0.575rem;
+      height: 0.575rem;
+      display: inline-flex;
+      border-radius: 50%;
+      padding: 0;
+      border: none;
+      text-indent: -9999px;
+      cursor: pointer;
+      background-color: var.$gray-primary-light;
+    }
+    &.active {
+      button {
+        cursor: default;
+        background-color: var.$secondary-light;
+      }
+    }
+    &:hover {
+      button {
+        background-color: var.$secondary-light;
+      }
+    }
+  }
+}

@@ -1,0 +1,181 @@
+@use "../base/variables" as var;
+@use "../mixins/breakpoints" as breakpoint;
+@use "../mixins/typography" as typography;
+
+/*--------------------------------------------------------------
+# Sucesso
+--------------------------------------------------------------*/
+.sec_sucesso {
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
+    
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+
+    @include breakpoint.media-breakpoint-up(md) {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    @include breakpoint.media-breakpoint-up(lg) {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+
+      @include breakpoint.media-breakpoint-up(md) {
+        display: grid;
+        align-items: center;
+        grid-auto-flow: dense;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas:
+          "headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerTit ."
+          "headerText headerText headerText headerText headerText headerText headerText headerText headerText headerText headerText .";
+      }
+
+      @include breakpoint.media-breakpoint-up(lg) {
+        grid-template-areas:
+          "headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerTit . . . ."
+          "headerText headerText headerText headerText headerText headerText headerText headerText headerText . . .";
+      }
+
+      @include breakpoint.media-breakpoint-up(xl) {
+        grid-template-areas: "headerTit headerTit headerTit headerTit headerTit headerTit headerText headerText headerText headerText headerText headerText";
+      }
+
+      @include breakpoint.media-breakpoint-up(xxl) {
+        grid-template-areas: "headerTit headerTit headerTit headerTit headerTit headerTit . headerText headerText headerText headerText headerText";
+      }
+
+      .title-default {
+        grid-area: headerTit;
+        // @include typography.title-sz4;
+        // @include breakpoint.media-breakpoint-up(sm) {
+        //   @include typography.title-sz3;
+        // }
+        // @include breakpoint.media-breakpoint-up(md) {
+        //   @include typography.title-sz3;
+        // }
+
+        // @include breakpoint.media-breakpoint-up(lg) {
+        //   @include typography.title-sz3;
+        // }
+
+        // @include breakpoint.media-breakpoint-up(xl) {
+        //   @include typography.title-sz2;
+        // }
+
+        // @include breakpoint.media-breakpoint-up(xxl) {
+        //   @include typography.title-sz1;
+        // }
+      }
+      .text-intro {
+        grid-area: headerText;
+        // @include typography.text-sz3;
+        // @include breakpoint.media-breakpoint-up(sm) {
+        //   @include typography.text-sz3;
+        // }
+        // @include breakpoint.media-breakpoint-up(md) {
+        //   @include typography.text-sz3;
+        // }
+
+        // @include breakpoint.media-breakpoint-up(lg) {
+        //   @include typography.text-sz3;
+        // }
+
+        // @include breakpoint.media-breakpoint-up(xl) {
+        //   @include typography.text-sz2;
+        // }
+
+        // @include breakpoint.media-breakpoint-up(xxl) {
+        //   @include typography.text-sz1;
+        // }
+      }
+      .cont-btn {
+        grid-area: headerBtn;
+
+        display: flex;
+        @include breakpoint.media-breakpoint-up(md) {
+          justify-content: flex-end;
+          align-items: flex-end;
+        }
+      }
+    }
+    .cont-cards {
+      position: relative;
+      display: grid;
+      grid-auto-flow: column;
+      gap: 0;
+
+      grid-template-columns: repeat(auto-fit, minmax(90%, auto));
+
+      &.swiper {
+        // overflow: hidden;
+
+        .swiper-wrapper {
+          display: flex;
+          gap: 1rem;
+          flex-direction: column;
+          @include breakpoint.media-breakpoint-up(md) {
+            gap: 0;
+            flex-direction: row;
+          }
+        }
+
+        .swiper-slide {
+          flex-shrink: 0;
+        }
+      }
+
+      *[class*="slide"] {
+        @include breakpoint.media-breakpoint-up(md) {
+          grid-template-columns: repeat(auto-fit, minmax(auto, 333px));
+          > *[class*="card-"] {
+            max-width: 333px;
+          }
+        }
+        @include breakpoint.media-breakpoint-up(lg) {
+          grid-template-columns: repeat(auto-fit, minmax(auto, 294px));
+          > *[class*="card-"] {
+            max-width: 294px;
+          }
+        }
+        @include breakpoint.media-breakpoint-up(xl) {
+          grid-template-columns: repeat(auto-fit, minmax(auto, 354px));
+          > *[class*="card-"] {
+            max-width: 354px;
+          }
+        }
+        @include breakpoint.media-breakpoint-up(xxl) {
+          grid-template-columns: repeat(auto-fit, minmax(auto, 325px));
+          > *[class*="card-"] {
+            max-width: 325px;
+          }
+        }
+
+        @include breakpoint.media-breakpoint-down(md) {
+          > *[class*="card-"] {
+            .img-default {
+              img {
+                height: fit-content;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footer-pagination {
+      @include breakpoint.media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+  }
+}

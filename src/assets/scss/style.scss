@@ -13,9 +13,13 @@
 
 // Components
 @use "components/button";
+@use "components/cards";
+@use "components/dots";
 @use "components/icons";
 @use "components/images";
+@use "components/pagination";
 
 // Layout
 @use "layout/hero";
 @use "layout/desafios";
+@use "layout/sucesso";
