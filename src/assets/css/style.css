@@ -1109,15 +1109,10 @@ picture img {
   padding: 1.5rem 1rem;
   border-radius: 1rem;
 }
-@media (min-width: 576px) {
-  .card.card-contato {
-    padding: 2rem;
-  }
-}
 @media (min-width: 768px) {
   .card.card-contato {
     background-image: url("../img/contato/bg-contato-md.webp");
-    padding: 3rem;
+    padding: 2rem;
     display: grid;
     grid-auto-flow: dense;
     grid-template-columns: repeat(12, 1fr);
@@ -1127,7 +1122,7 @@ picture img {
 @media (min-width: 992px) {
   .card.card-contato {
     background-image: url("../img/contato/bg-contato-lg.webp");
-    padding: 4rem;
+    padding: 3rem;
     grid-template-areas: "headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent . .";
   }
 }
@@ -1492,8 +1487,18 @@ form.form-impacto {
   gap: 1rem 1.5rem;
   background-color: #0e1015;
   border-radius: 1rem;
-  padding: 2rem 1.5rem;
+  padding: 2rem 1rem;
   color: #cccccc;
+}
+@media (min-width: 768px) {
+  form.form-impacto {
+    padding: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  form.form-impacto {
+    padding: 2rem 1.5rem;
+  }
 }
 form.form-impacto legend {
   font-weight: 700;
@@ -1507,8 +1512,12 @@ form.form-impacto legend {
 }
 form.form-impacto .btn {
   margin-top: 1rem;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
+}
+@media (min-width: 768px) {
+  form.form-impacto .btn {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1768,7 +1777,7 @@ form.form-impacto .btn {
   border-radius: 1rem;
   background-position: center;
   background-size: cover;
-  background-image: url("../img/desafios/bg-desafios-sm.webp");
+  background-image: url("../img/desafios/img-desafios-sm.webp");
   min-height: 172px;
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
