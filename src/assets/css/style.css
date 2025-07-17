@@ -1,5 +1,5 @@
 /**
-* Template Name: startups - v1.0.0
+* Template Name: imobiliarias - v1.0.0
 * Template URL: http://thiagolima.com
 * Author: Limão Acidez Tecnológica
 * License: MIT
@@ -1512,8 +1512,9 @@ form.form-impacto legend {
 }
 form.form-impacto .btn {
   margin-top: 1rem;
+  max-width: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   form.form-impacto .btn {
     max-width: -moz-fit-content;
     max-width: fit-content;
@@ -2060,6 +2061,11 @@ form.form-impacto .btn {
 }
 .sec_impacto .container .form-impacto {
   grid-area: impactForm;
+}
+@media (min-width: 1200px) {
+  .sec_impacto .container .form-impacto {
+    display: grid;
+  }
 }
 .sec_impacto .container .form-impacto > *:nth-child(1) {
   grid-area: formTitle;
