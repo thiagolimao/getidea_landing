@@ -11,7 +11,7 @@
     flex-direction: column;
 
     gap: 2rem;
-    
+
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
 
@@ -56,47 +56,9 @@
 
       .title-default {
         grid-area: headerTit;
-        // @include typography.title-sz4;
-        // @include breakpoint.media-breakpoint-up(sm) {
-        //   @include typography.title-sz3;
-        // }
-        // @include breakpoint.media-breakpoint-up(md) {
-        //   @include typography.title-sz3;
-        // }
-
-        // @include breakpoint.media-breakpoint-up(lg) {
-        //   @include typography.title-sz3;
-        // }
-
-        // @include breakpoint.media-breakpoint-up(xl) {
-        //   @include typography.title-sz2;
-        // }
-
-        // @include breakpoint.media-breakpoint-up(xxl) {
-        //   @include typography.title-sz1;
-        // }
       }
       .text-intro {
         grid-area: headerText;
-        // @include typography.text-sz3;
-        // @include breakpoint.media-breakpoint-up(sm) {
-        //   @include typography.text-sz3;
-        // }
-        // @include breakpoint.media-breakpoint-up(md) {
-        //   @include typography.text-sz3;
-        // }
-
-        // @include breakpoint.media-breakpoint-up(lg) {
-        //   @include typography.text-sz3;
-        // }
-
-        // @include breakpoint.media-breakpoint-up(xl) {
-        //   @include typography.text-sz2;
-        // }
-
-        // @include breakpoint.media-breakpoint-up(xxl) {
-        //   @include typography.text-sz1;
-        // }
       }
       .cont-btn {
         grid-area: headerBtn;

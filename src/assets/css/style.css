@@ -1,5 +1,5 @@
 /**
-* Template Name: lps_getidea - v1.0.0
+* Template Name: startups - v1.0.0
 * Template URL: http://thiagolima.com
 * Author: Limão Acidez Tecnológica
 * License: MIT
@@ -989,6 +989,11 @@ picture img {
     width: 3rem;
   }
 }
+.card.card-sucesso h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  min-width: 100%;
+}
 .card.card-sucesso p {
   font-size: 1.125rem;
 }
@@ -1030,7 +1035,7 @@ picture img {
 @media (min-width: 1400px) {
   .card.card-diagnostico {
     background-image: url("../img/diagnostico/bg-diagnostico-xxl.webp");
-    grid-template-areas: ". . headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent . .";
+    grid-template-areas: "headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent";
   }
 }
 .card.card-diagnostico header {
@@ -1362,6 +1367,7 @@ form {
 }
 form legend {
   color: #f5f5f5;
+  line-height: 1.2;
 }
 form .input-group {
   position: relative;
