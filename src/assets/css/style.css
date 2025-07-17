@@ -1,5 +1,5 @@
 /**
-* Template Name: terceirizados - v1.0.0
+* Template Name: imobiliarias - v1.0.0
 * Template URL: http://thiagolima.com
 * Author: Limão Acidez Tecnológica
 * License: MIT
@@ -989,6 +989,10 @@ picture img {
     width: 3rem;
   }
 }
+.card.card-sucesso h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
 .card.card-sucesso p {
   font-size: 1.125rem;
 }
@@ -1030,7 +1034,7 @@ picture img {
 @media (min-width: 1400px) {
   .card.card-diagnostico {
     background-image: url("https://placehold.co/1400x463/000000/0E1015/webp");
-    grid-template-areas: ". . headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent . .";
+    grid-template-areas: ". headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent .";
   }
 }
 .card.card-diagnostico header {
@@ -1053,7 +1057,6 @@ picture img {
   color: #f5f5f5;
 }
 .card.card-diagnostico header h2 span {
-  display: block;
   color: #fa7a3c;
 }
 @media (min-width: 576px) {
@@ -1839,11 +1842,16 @@ form.form-impacto .btn {
 }
 @media (min-width: 1400px) {
   .sec_sucesso .container header {
-    grid-template-areas: "headerTit headerTit headerTit headerTit headerTit headerTit . headerText headerText headerText headerText headerText";
+    grid-template-areas: "headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerText headerText headerText headerText headerText";
   }
 }
 .sec_sucesso .container header .title-default {
   grid-area: headerTit;
+}
+@media (min-width: 1400px) {
+  .sec_sucesso .container header .title-default {
+    padding-right: 2rem;
+  }
 }
 .sec_sucesso .container header .text-intro {
   grid-area: headerText;
