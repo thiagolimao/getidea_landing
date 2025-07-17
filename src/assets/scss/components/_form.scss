@@ -148,6 +148,9 @@ form {
     .btn {
       margin-top: 1rem;
       max-width: fit-content;
+      @include breakpoint.media-breakpoint-up(xl) {
+        max-width: fit-content;
+      }
     }
   }
 }

@@ -1504,6 +1504,12 @@ form.form-impacto .btn {
   max-width: -moz-fit-content;
   max-width: fit-content;
 }
+@media (min-width: 1200px) {
+  form.form-impacto .btn {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+}
 
 /*--------------------------------------------------------------
 # Hero
@@ -2070,6 +2076,11 @@ form.form-impacto .btn {
 }
 .sec_impacto .container .form-impacto {
   grid-area: impactForm;
+}
+@media (min-width: 1200px) {
+  .sec_impacto .container .form-impacto {
+    display: grid;
+  }
 }
 .sec_impacto .container .form-impacto > *:nth-child(1) {
   grid-area: formTitle;
