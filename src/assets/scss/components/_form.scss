@@ -11,6 +11,7 @@ form {
   gap: 1rem;
   legend {
     color: var.$text-primary-dark;
+    line-height: 1.2;
   }
   .input-group {
     position: relative;
@@ -80,7 +81,7 @@ form {
 
       &:focus,
       &:valid {
-        border-color: var.$red-primary;
+        border-color: var.$blue-primary;
         color: var.$text-primary-dark;
       }
     }
@@ -131,9 +132,17 @@ form {
 
     background-color: var.$bg-primary-dark;
     border-radius: var.$radius-default;
-    padding: 2rem 1.5rem;
+    padding: 2rem 1rem;
 
     color: var.$text-secondary-dark;
+
+    @include breakpoint.media-breakpoint-up(md) {
+      padding: 2rem;
+    }
+
+    @include breakpoint.media-breakpoint-up(lg) {
+      padding: 2rem 1.5rem;
+    }
 
     legend {
       font-weight: var.$fw-bold;
@@ -147,7 +156,9 @@ form {
 
     .btn {
       margin-top: 1rem;
-      max-width: fit-content;
+      @include breakpoint.media-breakpoint-up(md) {
+        max-width: fit-content;
+      }
     }
   }
 }

@@ -1,5 +1,5 @@
 /**
-* Template Name: terceirizados - v1.0.0
+* Template Name: imobiliarias - v1.0.0
 * Template URL: http://thiagolima.com
 * Author: Limão Acidez Tecnológica
 * License: MIT
@@ -968,7 +968,7 @@ picture img {
 .card.card-sucesso {
   flex-direction: column;
   gap: 1rem;
-  background-color: rgba(168, 31, 34, 0.16);
+  background-color: rgba(55, 86, 153, 0.16);
   border-radius: 1rem;
   padding: 1.5rem;
   height: 100%;
@@ -979,7 +979,7 @@ picture img {
   }
 }
 .card.card-sucesso i[class*=icon] {
-  color: #a81f22;
+  color: #375699;
   height: 2rem;
   width: 2rem;
 }
@@ -992,6 +992,7 @@ picture img {
 .card.card-sucesso h3 {
   font-size: 1.25rem;
   font-weight: 700;
+  min-width: 100%;
 }
 .card.card-sucesso p {
   font-size: 1.125rem;
@@ -1001,7 +1002,7 @@ picture img {
   background-position: 50%;
   background-repeat: no-repeat;
   background-color: #fefefe;
-  background-image: url("https://placehold.co/343x386/000000/0E1015/webpp");
+  background-image: url("https://placehold.co/343x386/000000/0E1015/webp");
   padding: 1.5rem 1rem;
   border-radius: 1rem;
 }
@@ -1034,7 +1035,7 @@ picture img {
 @media (min-width: 1400px) {
   .card.card-diagnostico {
     background-image: url("https://placehold.co/1400x463/000000/0E1015/webp");
-    grid-template-areas: ". headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent .";
+    grid-template-areas: "headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent";
   }
 }
 .card.card-diagnostico header {
@@ -1057,7 +1058,8 @@ picture img {
   color: #f5f5f5;
 }
 .card.card-diagnostico header h2 span {
-  color: #fa7a3c;
+  display: block;
+  color: #24a8e0;
 }
 @media (min-width: 576px) {
   .card.card-diagnostico header h2 {
@@ -1115,7 +1117,7 @@ picture img {
 @media (min-width: 768px) {
   .card.card-contato {
     background-image: url("https://placehold.co/708x263/000000/0E1015/webp");
-    padding: 3rem;
+    padding: 2rem;
     display: grid;
     grid-auto-flow: dense;
     grid-template-columns: repeat(12, 1fr);
@@ -1125,7 +1127,7 @@ picture img {
 @media (min-width: 992px) {
   .card.card-contato {
     background-image: url("https://placehold.co/944x327/000000/0E1015/webp");
-    padding: 4rem;
+    padding: 3rem;
     grid-template-areas: "headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent . .";
   }
 }
@@ -1154,7 +1156,7 @@ picture img {
   color: #f5f5f5;
 }
 .card.card-contato header h2 span {
-  color: #fa7a3c;
+  color: #24a8e0;
 }
 @media (min-width: 576px) {
   .card.card-contato header h2 {
@@ -1365,6 +1367,7 @@ form {
 }
 form legend {
   color: #f5f5f5;
+  line-height: 1.2;
 }
 form .input-group {
   position: relative;
@@ -1455,7 +1458,7 @@ form .input-group textarea:disabled:-ms-input-placeholder {
 form .input-group input:focus, form .input-group input:valid,
 form .input-group textarea:focus,
 form .input-group textarea:valid {
-  border-color: #fa7a3c;
+  border-color: #24a8e0;
   color: #f5f5f5;
 }
 form .input-group textarea {
@@ -1489,8 +1492,18 @@ form.form-impacto {
   gap: 1rem 1.5rem;
   background-color: #0e1015;
   border-radius: 1rem;
-  padding: 2rem 1.5rem;
+  padding: 2rem 1rem;
   color: #cccccc;
+}
+@media (min-width: 768px) {
+  form.form-impacto {
+    padding: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  form.form-impacto {
+    padding: 2rem 1.5rem;
+  }
 }
 form.form-impacto legend {
   font-weight: 700;
@@ -1504,8 +1517,12 @@ form.form-impacto legend {
 }
 form.form-impacto .btn {
   margin-top: 1rem;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
+}
+@media (min-width: 768px) {
+  form.form-impacto .btn {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
 }
 
 /*--------------------------------------------------------------
