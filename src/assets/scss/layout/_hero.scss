@@ -41,6 +41,7 @@
         position: absolute;
         top: 1.5rem;
         left: 1rem;
+        z-index: 9999;
         @include breakpoint.media-breakpoint-up(md) {
           top: 2rem;
           left: 2rem;
@@ -128,12 +129,31 @@
       display: flex;
       height: fit-content;
       flex: 0 0 auto;
+      border-radius: 0 var.$radius-default var.$radius-default 0;
       @include breakpoint.media-breakpoint-up(md) {
         grid-area: heroPic;
       }
+
+      @include breakpoint.media-breakpoint-down(md) {
+        overflow: visible;
+        position: relative;
+        &:before {
+          content: "";
+          width: 80%;
+          height: 60%;
+          display: block;
+          background-color: var.$primary-light;
+
+          position: absolute;
+          bottom: -0.5rem;
+          left: -0.5rem;
+          z-index: 0;
+        }
+      }
       img {
-        object-fit: contain;
+        object-fit: cover;
         width: 100%;
+        z-index: 2;
       }
     }
   }

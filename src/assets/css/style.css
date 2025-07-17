@@ -997,7 +997,7 @@ picture img {
   background-position: 50%;
   background-repeat: no-repeat;
   background-color: #fefefe;
-  background-image: url("https://placehold.co/343x386/000000/0E1015/webpp");
+  background-image: url("../img/diagnostico/bg-diagnostico-sm.webp");
   padding: 1.5rem 1rem;
   border-radius: 1rem;
 }
@@ -1008,13 +1008,13 @@ picture img {
 }
 @media (min-width: 768px) {
   .card.card-diagnostico {
-    background-image: url("https://placehold.co/704x445/000000/0E1015/webp");
+    background-image: url("../img/diagnostico/bg-diagnostico-md.webp");
     padding: 3rem;
   }
 }
 @media (min-width: 992px) {
   .card.card-diagnostico {
-    background-image: url("https://placehold.co/944x383/000000/0E1015/webp");
+    background-image: url("../img/diagnostico/bg-diagnostico-lg.webp");
     display: grid;
     grid-auto-flow: dense;
     grid-template-columns: repeat(12, 1fr);
@@ -1023,13 +1023,13 @@ picture img {
 @media (min-width: 1200px) {
   .card.card-diagnostico {
     padding: 4rem;
-    background-image: url("https://placehold.co/1140x449/000000/0E1015/webp");
+    background-image: url("../img/diagnostico/bg-diagnostico-xl.webp");
     grid-template-areas: ". headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent .";
   }
 }
 @media (min-width: 1400px) {
   .card.card-diagnostico {
-    background-image: url("https://placehold.co/1400x463/000000/0E1015/webp");
+    background-image: url("../img/diagnostico/bg-diagnostico-xxl.webp");
     grid-template-areas: ". . headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent . .";
   }
 }
@@ -1100,7 +1100,7 @@ picture img {
   background-position: 50%;
   background-repeat: no-repeat;
   background-color: #fefefe;
-  background-image: url("https://placehold.co/343x220/000000/0E1015/webp");
+  background-image: url("../img/contato/bg-contato-sm.webp");
   padding: 1.5rem 1rem;
   border-radius: 1rem;
 }
@@ -1111,7 +1111,7 @@ picture img {
 }
 @media (min-width: 768px) {
   .card.card-contato {
-    background-image: url("https://placehold.co/708x263/000000/0E1015/webp");
+    background-image: url("../img/contato/bg-contato-md.webp");
     padding: 3rem;
     display: grid;
     grid-auto-flow: dense;
@@ -1121,20 +1121,20 @@ picture img {
 }
 @media (min-width: 992px) {
   .card.card-contato {
-    background-image: url("https://placehold.co/944x327/000000/0E1015/webp");
+    background-image: url("../img/contato/bg-contato-lg.webp");
     padding: 4rem;
     grid-template-areas: "headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent . .";
   }
 }
 @media (min-width: 1200px) {
   .card.card-contato {
-    background-image: url("https://placehold.co/1140x375/000000/0E1015/webp");
+    background-image: url("../img/contato/bg-contato-xl.webp");
     grid-template-areas: "headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent . . . .";
   }
 }
 @media (min-width: 1400px) {
   .card.card-contato {
-    background-image: url("https://placehold.co/1400x375/000000/0E1015/webp");
+    background-image: url("../img/contato/bg-contato-xxl.webp");
     grid-template-areas: "headerContent headerContent headerContent headerContent headerContent headerContent headerContent . . . . .";
   }
 }
@@ -1546,6 +1546,7 @@ form.form-impacto .btn {
   position: absolute;
   top: 1.5rem;
   left: 1rem;
+  z-index: 9999;
 }
 @media (min-width: 768px) {
   .sec_hero .container .card-hero .header-logo {
@@ -1641,16 +1642,35 @@ form.form-impacto .btn {
   height: -moz-fit-content;
   height: fit-content;
   flex: 0 0 auto;
+  border-radius: 0 1rem 1rem 0;
 }
 @media (min-width: 768px) {
   .sec_hero .container .img-default {
     grid-area: heroPic;
   }
 }
+@media (max-width: 767.98px) {
+  .sec_hero .container .img-default {
+    overflow: visible;
+    position: relative;
+  }
+  .sec_hero .container .img-default:before {
+    content: "";
+    width: 80%;
+    height: 60%;
+    display: block;
+    background-color: #708a06;
+    position: absolute;
+    bottom: -0.5rem;
+    left: -0.5rem;
+    z-index: 0;
+  }
+}
 .sec_hero .container .img-default img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
+  z-index: 2;
 }
 
 /*--------------------------------------------------------------
