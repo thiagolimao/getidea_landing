@@ -496,14 +496,14 @@ blockquote footer {
   color: #707070;
 }
 .light .link-default:before {
-  background-color: #8cad07;
+  background-color: #708a06;
 }
 .light blockquote {
   border-color: #8e8e8e;
 }
 .light ul a,
 .light ol a {
-  color: #8cad07;
+  color: #708a06;
 }
 
 .dark .link {
@@ -844,16 +844,16 @@ picture img {
 }
 .btn.link-default.light {
   background: transparent;
-  color: #8cad07;
+  color: #708a06;
   border: none;
 }
 .btn.link-default.light:hover, .btn.link-default.light:not(:disabled):not(.disabled):active {
   background: transparent;
-  color: #8cad07;
+  color: #708a06;
 }
 .btn.link-default.light:focus, .btn.link-default.light:focus-visible, .btn.link-default.light:active, .btn.link-default.light.active {
   background: transparent;
-  color: #8cad07;
+  color: #708a06;
   box-shadow: none;
 }
 .btn.link-default.light:disabled, .btn.link-default.light.disabled {
@@ -1054,7 +1054,7 @@ picture img {
 }
 .card.card-diagnostico header h2 span {
   display: block;
-  color: #8cad07;
+  color: #708a06;
 }
 @media (min-width: 576px) {
   .card.card-diagnostico header h2 {
@@ -1151,7 +1151,7 @@ picture img {
   color: #f5f5f5;
 }
 .card.card-contato header h2 span {
-  color: #8cad07;
+  color: #708a06;
 }
 @media (min-width: 576px) {
   .card.card-contato header h2 {
@@ -1452,7 +1452,7 @@ form .input-group textarea:disabled:-ms-input-placeholder {
 form .input-group input:focus, form .input-group input:valid,
 form .input-group textarea:focus,
 form .input-group textarea:valid {
-  border-color: #8cad07;
+  border-color: #708a06;
   color: #f5f5f5;
 }
 form .input-group textarea {
@@ -1605,7 +1605,7 @@ form.form-impacto .btn {
   }
 }
 .sec_hero .container header h1 span {
-  color: #8cad07;
+  color: #708a06;
 }
 .sec_hero .container header p {
   color: #f5f5f5;
@@ -1762,7 +1762,7 @@ form.form-impacto .btn {
   border-radius: 1rem;
   background-position: center;
   background-size: cover;
-  background-image: url("https://placehold.co/343x172/000000/0E1015/webp");
+  background-image: url("../img/desafios/bg-desafios-sm.webp");
   min-height: 172px;
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -1772,22 +1772,22 @@ form.form-impacto .btn {
 }
 @media (min-width: 768px) {
   .sec_desafios .container .img-default {
-    background-image: url("https://placehold.co/704x251/000000/0E1015/webp");
+    background-image: url("../img/desafios/img-desafios-md.webp");
   }
 }
 @media (min-width: 992px) {
   .sec_desafios .container .img-default {
-    background-image: url("https://placehold.co/742x495/000000/0E1015/webp");
+    background-image: url("../img/desafios/img-desafios-lg.webp");
   }
 }
 @media (min-width: 1200px) {
   .sec_desafios .container .img-default {
-    background-image: url("https://placehold.co/790x527/000000/0E1015/webp");
+    background-image: url("../img/desafios/img-desafios-xl.webp");
   }
 }
 @media (min-width: 1400px) {
   .sec_desafios .container .img-default {
-    background-image: url("https://placehold.co/850x900/000000/0E1015/webp");
+    background-image: url("../img/desafios/img-desafios-xxl.webp");
   }
 }
 
