@@ -111,6 +111,9 @@
     }
     .form-impacto {
       grid-area: impactForm;
+      @include breakpoint.media-breakpoint-up(xl) {
+        display: grid;
+      }
 
       > * {
         &:nth-child(1) {
