@@ -989,6 +989,11 @@ picture img {
     width: 3rem;
   }
 }
+.card.card-sucesso h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  min-width: 100%;
+}
 .card.card-sucesso p {
   font-size: 1.125rem;
 }
@@ -1030,7 +1035,7 @@ picture img {
 @media (min-width: 1400px) {
   .card.card-diagnostico {
     background-image: url("../img/diagnostico/bg-diagnostico-xxl.webp");
-    grid-template-areas: ". . headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent . .";
+    grid-template-areas: ". headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent .";
   }
 }
 .card.card-diagnostico header {
@@ -1088,11 +1093,6 @@ picture img {
 @media (min-width: 992px) {
   .card.card-diagnostico header p {
     font-size: 1.375rem;
-  }
-}
-@media (min-width: 576px) {
-  .card.card-diagnostico header p strong {
-    display: block;
   }
 }
 .card.card-contato {
@@ -1859,11 +1859,16 @@ form.form-impacto .btn {
 }
 @media (min-width: 1400px) {
   .sec_sucesso .container header {
-    grid-template-areas: "headerTit headerTit headerTit headerTit headerTit headerTit . headerText headerText headerText headerText headerText";
+    grid-template-areas: "headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerText headerText headerText headerText headerText";
   }
 }
 .sec_sucesso .container header .title-default {
   grid-area: headerTit;
+}
+@media (min-width: 1400px) {
+  .sec_sucesso .container header .title-default {
+    padding-right: 2rem;
+  }
 }
 .sec_sucesso .container header .text-intro {
   grid-area: headerText;

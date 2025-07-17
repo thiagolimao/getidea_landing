@@ -44,6 +44,12 @@
         width: 3rem;
       }
     }
+
+    h3 {
+      @include typography.title-sz5;
+      font-weight: var.$fw-bold;
+      min-width: 100%;
+    }
     p {
       @include typography.text-sz3;
     }
@@ -83,7 +89,7 @@
 
     @include breakpoint.media-breakpoint-up(xxl) {
       background-image: url(var.$bg-diagnostico-xxl);
-      grid-template-areas: ". . headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent . .";
+      grid-template-areas: ". headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent .";
     }
 
     header {
@@ -132,11 +138,6 @@
         }
         @include breakpoint.media-breakpoint-up(lg) {
           @include typography.text-sz1;
-        }
-        strong {
-          @include breakpoint.media-breakpoint-up(sm) {
-            display: block;
-          }
         }
       }
     }
