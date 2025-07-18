@@ -1,5 +1,5 @@
 /**
-* Template Name: imobiliarias - v1.0.0
+* Template Name: terceirizados - v1.0.0
 * Template URL: http://thiagolima.com
 * Author: Limão Acidez Tecnológica
 * License: MIT
@@ -1002,7 +1002,7 @@ picture img {
   background-position: 50%;
   background-repeat: no-repeat;
   background-color: #fefefe;
-  background-image: url("https://placehold.co/343x386/000000/0E1015/webp");
+  background-image: url("../img/diagnostico/bg-diagnostico-sm.webp");
   padding: 1.5rem 1rem;
   border-radius: 1rem;
 }
@@ -1013,13 +1013,13 @@ picture img {
 }
 @media (min-width: 768px) {
   .card.card-diagnostico {
-    background-image: url("https://placehold.co/704x445/000000/0E1015/webp");
+    background-image: url("../img/diagnostico/bg-diagnostico-md.webp");
     padding: 3rem;
   }
 }
 @media (min-width: 992px) {
   .card.card-diagnostico {
-    background-image: url("https://placehold.co/944x383/000000/0E1015/webp");
+    background-image: url("../img/diagnostico/bg-diagnostico-lg.webp");
     display: grid;
     grid-auto-flow: dense;
     grid-template-columns: repeat(12, 1fr);
@@ -1028,13 +1028,13 @@ picture img {
 @media (min-width: 1200px) {
   .card.card-diagnostico {
     padding: 4rem;
-    background-image: url("https://placehold.co/1140x449/000000/0E1015/webp");
+    background-image: url("../img/diagnostico/bg-diagnostico-xl.webp");
     grid-template-areas: ". headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent .";
   }
 }
 @media (min-width: 1400px) {
   .card.card-diagnostico {
-    background-image: url("https://placehold.co/1400x463/000000/0E1015/webp");
+    background-image: url("../img/diagnostico/bg-diagnostico-xxl.webp");
     grid-template-areas: "headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent";
   }
 }
@@ -1059,7 +1059,7 @@ picture img {
 }
 .card.card-diagnostico header h2 span {
   display: block;
-  color: #24a8e0;
+  color: #fa7a3c;
 }
 @media (min-width: 576px) {
   .card.card-diagnostico header h2 {
@@ -1105,7 +1105,7 @@ picture img {
   background-position: 50%;
   background-repeat: no-repeat;
   background-color: #fefefe;
-  background-image: url("https://placehold.co/343x220/000000/0E1015/webp");
+  background-image: url("../img/contato/bg-contato-sm.webp");
   padding: 1.5rem 1rem;
   border-radius: 1rem;
 }
@@ -1116,7 +1116,7 @@ picture img {
 }
 @media (min-width: 768px) {
   .card.card-contato {
-    background-image: url("https://placehold.co/708x263/000000/0E1015/webp");
+    background-image: url("../img/contato/bg-contato-md.webp");
     padding: 2rem;
     display: grid;
     grid-auto-flow: dense;
@@ -1126,20 +1126,20 @@ picture img {
 }
 @media (min-width: 992px) {
   .card.card-contato {
-    background-image: url("https://placehold.co/944x327/000000/0E1015/webp");
+    background-image: url("../img/contato/bg-contato-lg.webp");
     padding: 3rem;
     grid-template-areas: "headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent . .";
   }
 }
 @media (min-width: 1200px) {
   .card.card-contato {
-    background-image: url("https://placehold.co/1140x375/000000/0E1015/webp");
+    background-image: url("../img/contato/bg-contato-xl.webp");
     grid-template-areas: "headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent . . . .";
   }
 }
 @media (min-width: 1400px) {
   .card.card-contato {
-    background-image: url("https://placehold.co/1400x375/000000/0E1015/webp");
+    background-image: url("../img/contato/bg-contato-xxl.webp");
     grid-template-areas: "headerContent headerContent headerContent headerContent headerContent headerContent headerContent . . . . .";
   }
 }
@@ -1156,7 +1156,7 @@ picture img {
   color: #f5f5f5;
 }
 .card.card-contato header h2 span {
-  color: #24a8e0;
+  color: #fa7a3c;
 }
 @media (min-width: 576px) {
   .card.card-contato header h2 {
@@ -1458,7 +1458,7 @@ form .input-group textarea:disabled:-ms-input-placeholder {
 form .input-group input:focus, form .input-group input:valid,
 form .input-group textarea:focus,
 form .input-group textarea:valid {
-  border-color: #24a8e0;
+  border-color: #fa7a3c;
   color: #f5f5f5;
 }
 form .input-group textarea {
@@ -1783,7 +1783,7 @@ form.form-impacto .btn {
   border-radius: 1rem;
   background-position: center;
   background-size: cover;
-  background-image: url("https://placehold.co/343x172/000000/0E1015/webp");
+  background-image: url("../img/desafios/bg-desafios-sm.webp");
   min-height: 172px;
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -1793,22 +1793,22 @@ form.form-impacto .btn {
 }
 @media (min-width: 768px) {
   .sec_desafios .container .img-default {
-    background-image: url("https://placehold.co/704x251/000000/0E1015/webp");
+    background-image: url("../img/desafios/img-desafios-md.webp");
   }
 }
 @media (min-width: 992px) {
   .sec_desafios .container .img-default {
-    background-image: url("https://placehold.co/742x495/000000/0E1015/webp");
+    background-image: url("../img/desafios/img-desafios-lg.webp");
   }
 }
 @media (min-width: 1200px) {
   .sec_desafios .container .img-default {
-    background-image: url("https://placehold.co/790x527/000000/0E1015/webp");
+    background-image: url("../img/desafios/img-desafios-xl.webp");
   }
 }
 @media (min-width: 1400px) {
   .sec_desafios .container .img-default {
-    background-image: url("https://placehold.co/850x900/000000/0E1015/webp");
+    background-image: url("../img/desafios/img-desafios-xxl.webp");
   }
 }
 

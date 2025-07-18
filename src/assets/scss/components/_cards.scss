@@ -113,7 +113,7 @@
 
         span {
           display: block;
-          color: var.$blue-primary;
+          color: var.$red-primary;
         }
         @include breakpoint.media-breakpoint-up(sm) {
           @include typography.title-sz4;
@@ -201,7 +201,7 @@
 
         span {
           //   display: block;
-          color: var.$blue-primary;
+          color: var.$red-primary;
         }
         @include breakpoint.media-breakpoint-up(sm) {
           @include typography.title-sz4;
