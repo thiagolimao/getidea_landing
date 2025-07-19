@@ -1,5 +1,5 @@
 /**
-* Template Name: terceirizados - v1.0.0
+* Template Name: startups - v1.0.0
 * Template URL: http://thiagolima.com
 * Author: Limão Acidez Tecnológica
 * License: MIT
@@ -1035,7 +1035,6 @@ picture img {
 @media (min-width: 1400px) {
   .card.card-diagnostico {
     background-image: url("../img/diagnostico/bg-diagnostico-xxl.webp");
-    grid-template-areas: "headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent";
   }
 }
 .card.card-diagnostico header {
@@ -1058,7 +1057,6 @@ picture img {
   color: #f5f5f5;
 }
 .card.card-diagnostico header h2 span {
-  display: block;
   color: #fa7a3c;
 }
 @media (min-width: 576px) {

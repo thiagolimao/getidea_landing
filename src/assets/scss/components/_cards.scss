@@ -89,7 +89,7 @@
 
     @include breakpoint.media-breakpoint-up(xxl) {
       background-image: url(var.$bg-diagnostico-xxl);
-      grid-template-areas: "headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent";
+      //   grid-template-areas: ". headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent .";
     }
 
     header {
@@ -112,7 +112,7 @@
         // text-align: center;
 
         span {
-          display: block;
+          //   display: block;
           color: var.$red-primary;
         }
         @include breakpoint.media-breakpoint-up(sm) {
