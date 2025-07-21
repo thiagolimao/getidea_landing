@@ -1975,7 +1975,6 @@ form.form-impacto .btn {
   gap: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   position: relative;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -2013,21 +2012,13 @@ form.form-impacto .btn {
   flex-direction: column;
   gap: 2rem;
 }
-@media (min-width: 992px) {
-  .sec_impacto .container .cont-left {
-    position: sticky;
-    top: 2rem;
-    max-height: -moz-fit-content;
-    max-height: fit-content;
-  }
-}
-.sec_impacto .container .cont-right {
-  grid-area: contRight;
-}
+.sec_impacto .container .cont-right,
 .sec_impacto .container .form-impacto {
   grid-area: contRight;
+  min-width: 100%;
 }
 @media (min-width: 1200px) {
+  .sec_impacto .container .cont-right,
   .sec_impacto .container .form-impacto {
     display: grid;
   }
