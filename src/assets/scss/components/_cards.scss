@@ -24,7 +24,7 @@
     flex-direction: column;
     gap: 1rem;
 
-    background-color: rgba(var.$blue-secondary, 16%);
+    background-color: rgba(var.$secondary-light, 16%);
     border-radius: var.$radius-default;
     padding: 1.5rem;
 
@@ -35,7 +35,7 @@
     }
 
     i[class*="icon"] {
-      color: var.$blue-secondary;
+      color: var.$secondary-light;
       height: 2rem;
       width: 2rem;
 
@@ -54,6 +54,160 @@
       @include typography.text-sz3;
     }
   }
+
+  &.card-solucoes {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+
+    background-color: rgba(var.$gray-primary-dark, 25%);
+    border-radius: var.$radius-default;
+    padding: 1.5rem;
+
+    // height: 100%;
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .arrow-item {
+      border-bottom-left-radius: 1.5rem;
+      padding: 0 0 1rem 1rem;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-color: var.$bg-primary-light;
+      &:after,
+      &:before {
+        background-size: cover;
+        content: "";
+        display: block;
+        height: 0.9375rem;
+        position: absolute;
+        width: 0.9375rem;
+        background-image: url(../img/detail-curve.svg);
+      }
+      &:before {
+        bottom: auto;
+        left: -0.9375rem;
+        top: 0;
+      }
+
+      &:after {
+        bottom: -0.9375rem;
+        right: 0;
+        top: auto;
+      }
+      .circle {
+        align-items: baseline;
+        border: 1px solid transparent;
+        border-radius: 3rem;
+        display: flex;
+        font-size: 0.875rem;
+        font-weight: 700;
+        gap: 0.5rem;
+        height: 3rem;
+        width: 3rem;
+        justify-content: end;
+        text-decoration: none;
+        white-space: nowrap;
+        .icon {
+          height: 2rem;
+          width: 2rem;
+          display: none;
+        }
+      }
+    }
+
+    h3 {
+      @include typography.title-sz4;
+      font-weight: var.$fw-bold;
+      text-wrap: balance;
+      padding-right: 2.5rem;
+      color: var.$secondary-light;
+
+      @include breakpoint.media-breakpoint-up(md) {
+        @include typography.title-sz3;
+      }
+      @include breakpoint.media-breakpoint-up(lg) {
+        @include typography.title-sz2;
+      }
+
+      @include breakpoint.media-breakpoint-up(xl) {
+        @include typography.title-sz3;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        width: 2rem;
+        height: 0.3rem;
+        background-color: var.$secondary-light;
+        margin-top: 1rem;
+      }
+    }
+    h4 {
+      @include typography.title-sz4;
+      font-weight: var.$fw-bold;
+      margin-bottom: 0.5rem;
+
+      @include breakpoint.media-breakpoint-up(md) {
+        @include typography.title-sz4;
+      }
+      @include breakpoint.media-breakpoint-up(lg) {
+        @include typography.title-sz3;
+      }
+
+      @include breakpoint.media-breakpoint-up(xl) {
+        @include typography.title-sz4;
+      }
+    }
+    ol {
+      gap: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      li {
+        @include typography.text-sz2;
+        line-height: 1.5;
+
+        @include breakpoint.media-breakpoint-up(md) {
+          @include typography.text-sz3;
+        }
+        @include breakpoint.media-breakpoint-up(lg) {
+          @include typography.text-sz2;
+        }
+
+        @include breakpoint.media-breakpoint-up(xl) {
+          @include typography.text-sz1;
+        }
+        ul {
+          list-style-type: square;
+          list-style-position: inside;
+          padding: 0;
+
+          gap: 0.65rem;
+          display: flex;
+          flex-direction: column;
+          li {
+            line-height: 120%;
+            &::marker {
+              color: var.$secondary-light;
+            }
+          }
+        }
+      }
+    }
+    .btn {
+      min-width: 100%;
+    }
+
+    &.last {
+      padding: 0;
+    }
+  }
   &.card-diagnostico {
     background-size: cover;
     background-position: 50%;
@@ -61,6 +215,7 @@
     background-color: var.$bg-primary-light;
 
     background-image: url(var.$bg-diagnostico);
+    background-attachment: fixed;
     padding: 1.5rem 1rem;
     border-radius: var.$radius-default;
 
@@ -89,7 +244,7 @@
 
     @include breakpoint.media-breakpoint-up(xxl) {
       background-image: url(var.$bg-diagnostico-xxl);
-      //   grid-template-areas: ". headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent .";
+      grid-template-areas: ". headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent .";
     }
 
     header {
@@ -112,8 +267,8 @@
         // text-align: center;
 
         span {
-          //   display: block;
-          color: var.$red-primary;
+          display: block;
+          color: var.$primary-light;
         }
         @include breakpoint.media-breakpoint-up(sm) {
           @include typography.title-sz4;
@@ -139,11 +294,6 @@
         @include breakpoint.media-breakpoint-up(lg) {
           @include typography.text-sz1;
         }
-        strong {
-          @include breakpoint.media-breakpoint-up(sm) {
-            display: block;
-          }
-        }
       }
     }
   }
@@ -152,8 +302,8 @@
     background-position: 50%;
     background-repeat: no-repeat;
     background-color: var.$bg-primary-light;
-
     background-image: url(var.$bg-contato);
+
     padding: 1.5rem 1rem;
     border-radius: var.$radius-default;
 
@@ -162,7 +312,7 @@
     }
     @include breakpoint.media-breakpoint-up(md) {
       background-image: url(var.$bg-contato-md);
-      padding: 2rem;
+      padding: 3rem;
 
       display: grid;
       grid-auto-flow: dense;
@@ -173,7 +323,7 @@
 
     @include breakpoint.media-breakpoint-up(lg) {
       background-image: url(var.$bg-contato-lg);
-      padding: 3rem;
+      padding: 4rem;
       grid-template-areas: "headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent headerContent . .";
     }
 
@@ -201,7 +351,7 @@
 
         span {
           //   display: block;
-          color: var.$red-primary;
+          color: var.$primary-light;
         }
         @include breakpoint.media-breakpoint-up(sm) {
           @include typography.title-sz4;
