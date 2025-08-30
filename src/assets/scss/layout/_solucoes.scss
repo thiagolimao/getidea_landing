@@ -1,0 +1,124 @@
+@use "../base/variables" as var;
+@use "../mixins/breakpoints" as breakpoint;
+@use "../mixins/typography" as typography;
+
+/*--------------------------------------------------------------
+# Solucoes
+--------------------------------------------------------------*/
+.sec_solucoes {
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
+
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+
+    @include breakpoint.media-breakpoint-up(md) {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    @include breakpoint.media-breakpoint-up(lg) {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+
+      .title-default {
+        span {
+        //   @include breakpoint.media-breakpoint-up(lg) {
+        //     display: block;
+        //   }
+        }
+      }
+    }
+    p {
+      @include typography.text-sz3;
+      @include breakpoint.media-breakpoint-up(sm) {
+        @include typography.text-sz3;
+      }
+      @include breakpoint.media-breakpoint-up(md) {
+        @include typography.text-sz3;
+      }
+
+      @include breakpoint.media-breakpoint-up(lg) {
+        @include typography.text-sz3;
+      }
+
+      @include breakpoint.media-breakpoint-up(xl) {
+        @include typography.text-sz2;
+      }
+
+      @include breakpoint.media-breakpoint-up(xxl) {
+        @include typography.text-sz1;
+      }
+    }
+
+    
+
+    header {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+
+      @include breakpoint.media-breakpoint-up(md) {
+        display: grid;
+        align-items: center;
+        grid-auto-flow: dense;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas:
+          "headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerTit ."
+          "headerText headerText headerText headerText headerText headerText headerText headerText headerText headerText headerText .";
+      }
+
+      @include breakpoint.media-breakpoint-up(lg) {
+        grid-template-areas:
+          "headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerTit . . . ."
+          "headerText headerText headerText headerText headerText headerText headerText headerText headerText . . .";
+      }
+
+      @include breakpoint.media-breakpoint-up(xl) {
+        grid-template-areas: "headerTit headerTit headerTit headerTit headerTit headerTit headerText headerText headerText headerText headerText headerText";
+      }
+
+      @include breakpoint.media-breakpoint-up(xxl) {
+        grid-template-areas: "headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerText headerText headerText headerText headerText";
+      }
+
+      .title-default {
+        grid-area: headerTit;
+      }
+      .text-intro {
+        grid-area: headerText;
+      }
+    }
+
+    .cont-cards {
+      column-count: 1;
+      column-gap: 1.5rem;
+
+      @include breakpoint.media-breakpoint-up(lg) {
+        column-count: 2;
+      }
+
+      @include breakpoint.media-breakpoint-up(xl) {
+        column-count: 3;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1.5rem;
+      }
+      .card {
+        // margin-bottom: 1.5rem;
+        display: flex;
+        break-inside: avoid;
+      }
+    }
+  }
+}

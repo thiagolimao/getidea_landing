@@ -110,7 +110,7 @@
         height: 100%;
 
         .box-arrow {
-          background-color: rgba(var.$green-secondary, 16%);
+          background-color: rgba(var.$secondary-light, 16%);
           border-radius: calc(var.$radius-default/2);
           padding: 0.75rem;
           height: 2.5rem;
@@ -122,7 +122,7 @@
           }
 
           i[class*="icon"] {
-            color: var.$green-secondary;
+            color: var.$secondary-light;
             height: 1rem;
             width: 1rem;
             @include breakpoint.media-breakpoint-up(md) {

@@ -10,6 +10,9 @@ $green-secondary: #236604;
 $red-primary: #fa7a3c;
 $red-secondary: #a81f22;
 
+$purple-primary: #8555cd;
+$purple-secondary: #472478;
+
 $gray-primary-light: #8e8e8e;
 $gray-secondary-light: #717171;
 
@@ -17,8 +20,8 @@ $gray-primary-dark: #d1d3d4;
 $gray-secondary-dark: #a0a0a0;
 $gray-tertiary-dark: #a3a3a3;
 
-$primary-light: $green-primary;
-$secondary-light: $green-secondary;
+$primary-light: $purple-primary;
+$secondary-light: $purple-secondary;
 $tertiary-light: #008071;
 
 $primary-dark: $red-primary;
@@ -135,7 +138,7 @@ $img-desafios-xxl: "../img/desafios/img-desafios-xxl.webp";
 $img-desafios-xl: "../img/desafios/img-desafios-xl.webp";
 $img-desafios-lg: "../img/desafios/img-desafios-lg.webp";
 $img-desafios-md: "../img/desafios/img-desafios-md.webp";
-$img-desafios: "../img/desafios/bg-desafios-sm.webp";
+$img-desafios: "../img/desafios/img-desafios-sm.webp";
 
 $bg-diagnostico-xxl: "../img/diagnostico/bg-diagnostico-xxl.webp";
 $bg-diagnostico-xl: "../img/diagnostico/bg-diagnostico-xl.webp";

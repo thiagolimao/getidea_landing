@@ -92,6 +92,8 @@ h6 {
   @include typography.title-sz4;
   font-weight: var.$fw-bold;
 
+  text-wrap: balance;
+
   @include breakpoint.media-breakpoint-up(sm) {
     @include typography.title-sz5;
   }
