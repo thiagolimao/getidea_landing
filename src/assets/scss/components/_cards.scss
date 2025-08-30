@@ -123,7 +123,7 @@
     }
 
     h3 {
-      @include typography.title-sz3;
+      @include typography.title-sz4;
       font-weight: var.$fw-bold;
       text-wrap: balance;
       padding-right: 2.5rem;
@@ -145,7 +145,7 @@
       }
     }
     h4 {
-      @include typography.title-sz4;
+      @include typography.title-sz6;
       font-weight: var.$fw-bold;
       margin-bottom: 0.5rem;
 
@@ -161,7 +161,7 @@
       display: flex;
       flex-direction: column;
       li {
-        @include typography.text-sz2;
+        @include typography.text-sz3;
         line-height: 1.5;
 
         @include breakpoint.media-breakpoint-up(md) {

@@ -19,7 +19,7 @@
     @include breakpoint.media-breakpoint-only(md) {
       padding-top: 3rem;
       padding-bottom: 3rem;
-      gap: 4.275rem;
+      gap: 2.275rem;
     }
 
     @include breakpoint.media-breakpoint-up(lg) {
@@ -45,10 +45,12 @@
       flex-direction: column;
       gap: 2rem;
 
-      position: sticky;
-      top: 4rem;
+      @include breakpoint.media-breakpoint-up(lg) {
+        position: sticky;
+        top: 4rem;
 
-      max-height: fit-content;
+        max-height: fit-content;
+      }
     }
 
     .cont-right,
@@ -61,6 +63,8 @@
     }
 
     .cont-right {
+      display: flex;
+      flex-direction: column;
       gap: 1.5rem;
       p {
         @include typography.text-sz3;
