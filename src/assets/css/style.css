@@ -1,5 +1,5 @@
 /**
-* Template Name: imobiliarias - v1.0.0
+* Template Name: automacoes - v1.0.0
 * Template URL: http://thiagolima.com
 * Author: Limão Acidez Tecnológica
 * License: MIT
@@ -997,12 +997,167 @@ picture img {
 .card.card-sucesso p {
   font-size: 1.125rem;
 }
+.card.card-solucoes {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: rgba(209, 211, 212, 0.25);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+.card.card-solucoes .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.card.card-solucoes .arrow-item {
+  border-bottom-left-radius: 1.5rem;
+  padding: 0 0 1rem 1rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #fefefe;
+}
+.card.card-solucoes .arrow-item:after, .card.card-solucoes .arrow-item:before {
+  background-size: cover;
+  content: "";
+  display: block;
+  height: 0.9375rem;
+  position: absolute;
+  width: 0.9375rem;
+  background-image: url(../img/detail-curve.svg);
+}
+.card.card-solucoes .arrow-item:before {
+  bottom: auto;
+  left: -0.9375rem;
+  top: 0;
+}
+.card.card-solucoes .arrow-item:after {
+  bottom: -0.9375rem;
+  right: 0;
+  top: auto;
+}
+.card.card-solucoes .arrow-item .circle {
+  align-items: baseline;
+  border: 1px solid transparent;
+  border-radius: 3rem;
+  display: flex;
+  font-size: 0.875rem;
+  font-weight: 700;
+  gap: 0.5rem;
+  height: 3rem;
+  width: 3rem;
+  justify-content: end;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.card.card-solucoes .arrow-item .circle .icon {
+  height: 2rem;
+  width: 2rem;
+  display: none;
+}
+.card.card-solucoes h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-wrap: balance;
+  padding-right: 2.5rem;
+  color: #236604;
+}
+@media (min-width: 768px) {
+  .card.card-solucoes h3 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .card.card-solucoes h3 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .card.card-solucoes h3 {
+    font-size: 2rem;
+  }
+}
+.card.card-solucoes h3::after {
+  content: "";
+  display: block;
+  width: 2rem;
+  height: 0.3rem;
+  background-color: #236604;
+  margin-top: 1rem;
+}
+.card.card-solucoes h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 768px) {
+  .card.card-solucoes h4 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .card.card-solucoes h4 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .card.card-solucoes h4 {
+    font-size: 1.5rem;
+  }
+}
+.card.card-solucoes ol {
+  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.card.card-solucoes ol li {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+@media (min-width: 768px) {
+  .card.card-solucoes ol li {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 992px) {
+  .card.card-solucoes ol li {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1200px) {
+  .card.card-solucoes ol li {
+    font-size: 1.375rem;
+  }
+}
+.card.card-solucoes ol li ul {
+  list-style-type: square;
+  list-style-position: inside;
+  padding: 0;
+  gap: 0.65rem;
+  display: flex;
+  flex-direction: column;
+}
+.card.card-solucoes ol li ul li {
+  line-height: 120%;
+}
+.card.card-solucoes ol li ul li::marker {
+  color: #236604;
+}
+.card.card-solucoes .btn {
+  min-width: 100%;
+}
+.card.card-solucoes.last {
+  padding: 0;
+}
 .card.card-diagnostico {
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
   background-color: #fefefe;
   background-image: url("../img/diagnostico/bg-diagnostico-sm.webp");
+  background-attachment: fixed;
   padding: 1.5rem 1rem;
   border-radius: 1rem;
 }
@@ -1952,6 +2107,123 @@ form.form-impacto .btn {
   .sec_sucesso .container .footer-pagination {
     display: none;
   }
+}
+
+/*--------------------------------------------------------------
+# Solucoes
+--------------------------------------------------------------*/
+.sec_solucoes .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+@media (min-width: 768px) {
+  .sec_solucoes .container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+@media (min-width: 992px) {
+  .sec_solucoes .container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+.sec_solucoes .container header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.sec_solucoes .container p {
+  font-size: 1.125rem;
+}
+@media (min-width: 576px) {
+  .sec_solucoes .container p {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 768px) {
+  .sec_solucoes .container p {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 992px) {
+  .sec_solucoes .container p {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 1200px) {
+  .sec_solucoes .container p {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1400px) {
+  .sec_solucoes .container p {
+    font-size: 1.375rem;
+  }
+}
+.sec_solucoes .container header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+@media (min-width: 768px) {
+  .sec_solucoes .container header {
+    display: grid;
+    align-items: center;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: "headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerTit ." "headerText headerText headerText headerText headerText headerText headerText headerText headerText headerText headerText .";
+  }
+}
+@media (min-width: 992px) {
+  .sec_solucoes .container header {
+    grid-template-areas: "headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerTit . . . ." "headerText headerText headerText headerText headerText headerText headerText headerText headerText . . .";
+  }
+}
+@media (min-width: 1200px) {
+  .sec_solucoes .container header {
+    grid-template-areas: "headerTit headerTit headerTit headerTit headerTit headerTit headerText headerText headerText headerText headerText headerText";
+  }
+}
+@media (min-width: 1400px) {
+  .sec_solucoes .container header {
+    grid-template-areas: "headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerText headerText headerText headerText headerText";
+  }
+}
+.sec_solucoes .container header .title-default {
+  grid-area: headerTit;
+}
+.sec_solucoes .container header .text-intro {
+  grid-area: headerText;
+}
+.sec_solucoes .container .cont-cards {
+  -moz-column-count: 1;
+       column-count: 1;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+@media (min-width: 992px) {
+  .sec_solucoes .container .cont-cards {
+    -moz-column-count: 2;
+         column-count: 2;
+  }
+}
+@media (min-width: 1200px) {
+  .sec_solucoes .container .cont-cards {
+    -moz-column-count: 3;
+         column-count: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
+  }
+}
+.sec_solucoes .container .cont-cards .card {
+  display: flex;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
 }
 
 /*--------------------------------------------------------------
