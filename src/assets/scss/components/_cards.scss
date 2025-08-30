@@ -71,6 +71,7 @@
       display: flex;
       flex-direction: column;
       gap: 2rem;
+      max-width: 100%;
     }
 
     .arrow-item {
@@ -123,21 +124,17 @@
     }
 
     h3 {
-      @include typography.title-sz4;
+      @include typography.title-sz5;
       font-weight: var.$fw-bold;
       text-wrap: balance;
       padding-right: 2.5rem;
       color: var.$secondary-light;
 
       @include breakpoint.media-breakpoint-up(md) {
-        @include typography.title-sz3;
+        @include typography.title-sz4;
       }
       @include breakpoint.media-breakpoint-up(lg) {
-        @include typography.title-sz2;
-      }
-
-      @include breakpoint.media-breakpoint-up(xl) {
-        @include typography.title-sz3;
+        @include typography.title-sz4;
       }
 
       &::after {

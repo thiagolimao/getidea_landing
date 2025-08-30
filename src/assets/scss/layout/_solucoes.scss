@@ -32,9 +32,9 @@
 
       .title-default {
         span {
-        //   @include breakpoint.media-breakpoint-up(lg) {
-        //     display: block;
-        //   }
+          //   @include breakpoint.media-breakpoint-up(lg) {
+          //     display: block;
+          //   }
         }
       }
     }
@@ -59,8 +59,6 @@
         @include typography.text-sz1;
       }
     }
-
-    
 
     header {
       display: flex;
@@ -100,22 +98,22 @@
     }
 
     .cont-cards {
-      column-count: 1;
-      column-gap: 1.5rem;
+      gap: 1.5rem;
+
+      display: grid;
+
+      @include breakpoint.media-breakpoint-up(md) {
+        grid-template-columns: repeat(auto-fit, minmax(333px, 1fr));
+      }
 
       @include breakpoint.media-breakpoint-up(lg) {
-        column-count: 2;
+        grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
       }
 
       @include breakpoint.media-breakpoint-up(xl) {
-        column-count: 3;
-
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(354px, 1fr));
       }
       .card {
-        // margin-bottom: 1.5rem;
         display: flex;
         break-inside: avoid;
       }
