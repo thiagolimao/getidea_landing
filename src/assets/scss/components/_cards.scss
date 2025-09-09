@@ -381,4 +381,128 @@
       }
     }
   }
+
+  &.card-service {
+    flex-direction: column;
+    gap: 1.5rem;
+
+    @include breakpoint.media-breakpoint-up(lg) {
+      display: grid;
+      gap: 2rem;
+      grid-auto-flow: dense;
+      align-self: center;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-areas: "txtCards txtCards txtCards txtCards txtCards txtCards txtCards imgCards imgCards imgCards imgCards imgCards";
+    }
+
+    @include breakpoint.media-breakpoint-up(xl) {
+      gap: 2.5rem;
+      grid-template-areas: "txtCards txtCards txtCards txtCards txtCards txtCards . imgCards imgCards imgCards imgCards imgCards";
+    }
+
+    @include breakpoint.media-breakpoint-up(xxl) {
+      grid-template-areas: "txtCards txtCards txtCards txtCards txtCards txtCards . imgCards imgCards imgCards imgCards imgCards";
+    }
+    picture {
+      grid-area: imgCards;
+    }
+    .card-body {
+      grid-area: txtCards;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      @include breakpoint.media-breakpoint-up(lg) {
+        gap: 2rem;
+      }
+      @include breakpoint.media-breakpoint-up(xl) {
+        gap: 2.5rem;
+      }
+    //   .card-title {
+    //     @include typography.title-sz4;
+    //     @include breakpoint.media-breakpoint-up(lg) {
+    //       @include typography.title-sz3;
+    //     }
+    //     @include breakpoint.media-breakpoint-up(xl) {
+    //       @include typography.title-sz2;
+    //     }
+    //   }
+    //   p {
+    //     @include typography.text-sz3;
+    //     @include breakpoint.media-breakpoint-up(sm) {
+    //       @include typography.text-sz4;
+    //     }
+    //     @include breakpoint.media-breakpoint-up(md) {
+    //       @include typography.text-sz3;
+    //     }
+
+    //     @include breakpoint.media-breakpoint-up(lg) {
+    //       @include typography.text-sz2;
+    //     }
+
+    //     @include breakpoint.media-breakpoint-up(xl) {
+    //       @include typography.text-sz1;
+    //     }
+    //   }
+
+      h3 {
+        @include typography.title-sz4;
+        @include breakpoint.media-breakpoint-up(lg) {
+          @include typography.title-sz3;
+        }
+        @include breakpoint.media-breakpoint-up(xl) {
+          @include typography.title-sz2;
+        }
+      }
+      h4 {
+        @include typography.title-sz6;
+        // font-weight: var.$fw-bold;
+        margin-bottom: 0.5rem;
+
+        @include breakpoint.media-breakpoint-up(md) {
+          @include typography.title-sz4;
+        }
+        @include breakpoint.media-breakpoint-up(lg) {
+          @include typography.title-sz4;
+        }
+      }
+      ol {
+        gap: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        li {
+          @include typography.text-sz3;
+          line-height: 1.5;
+
+          @include breakpoint.media-breakpoint-up(md) {
+            @include typography.text-sz3;
+          }
+          @include breakpoint.media-breakpoint-up(lg) {
+            @include typography.text-sz2;
+          }
+
+          @include breakpoint.media-breakpoint-up(xl) {
+            @include typography.text-sz1;
+          }
+          ul {
+            list-style-type: square;
+            list-style-position: inside;
+            padding: 0;
+
+            gap: 0.65rem;
+            display: flex;
+            flex-direction: column;
+            li {
+              line-height: 120%;
+              &::marker {
+                color: var.$secondary-light;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

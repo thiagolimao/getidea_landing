@@ -1,3 +1,4 @@
+/* global ScrollTrigger */
 (function () {
   "use strict";
   console.log("🚀 main.js carregado");
@@ -58,4 +59,29 @@
 
   // Adiciona um listener para o evento resize
   window.addEventListener("resize", checkScreenWidth);
+
+    //
+  // ——— 4) GSAP ScrollTrigger para cards ———
+  //
+  if (window.gsap && window.ScrollTrigger) {
+    gsap.registerPlugin(ScrollTrigger);
+    const cards = gsap.utils.toArray(".card");
+    if (cards.length) {
+      cards[0].classList.add("card_active");
+      cards.forEach((card) => {
+        ScrollTrigger.create({
+          trigger: card,
+          start: "top center",
+          onEnter: () => card.classList.add("card_active"),
+        });
+        ScrollTrigger.create({
+          trigger: card,
+          start: "bottom center",
+          onLeaveBack: () => card.classList.remove("card_active"),
+        });
+      });
+    }
+  } else {
+    console.warn("⚠️ GSAP/ScrollTrigger não encontrado – pulei animações");
+  }
 })();

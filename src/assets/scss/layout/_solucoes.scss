@@ -18,6 +18,7 @@
     @include breakpoint.media-breakpoint-up(md) {
       padding-top: 3rem;
       padding-bottom: 3rem;
+      gap: 4rem;
     }
 
     @include breakpoint.media-breakpoint-up(lg) {
@@ -29,97 +30,52 @@
       display: flex;
       flex-direction: column;
       gap: 0.75rem;
-
-      .title-default {
-        span {
-          //   @include breakpoint.media-breakpoint-up(lg) {
-          //     display: block;
-          //   }
-        }
-      }
-    }
-    p {
-      @include typography.text-sz3;
-      @include breakpoint.media-breakpoint-up(sm) {
-        @include typography.text-sz3;
-      }
-      @include breakpoint.media-breakpoint-up(md) {
-        @include typography.text-sz3;
-      }
-
-      @include breakpoint.media-breakpoint-up(lg) {
-        @include typography.text-sz3;
-      }
-
-      @include breakpoint.media-breakpoint-up(xl) {
-        @include typography.text-sz2;
-      }
-
-      @include breakpoint.media-breakpoint-up(xxl) {
-        @include typography.text-sz1;
-      }
-    }
-
-    header {
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-
-      @include breakpoint.media-breakpoint-up(md) {
-        display: grid;
-        align-items: center;
-        grid-auto-flow: dense;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-areas:
-          "headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerTit ."
-          "headerText headerText headerText headerText headerText headerText headerText headerText headerText headerText headerText .";
-      }
-
-      @include breakpoint.media-breakpoint-up(lg) {
-        grid-template-areas:
-          "headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerTit . . . ."
-          "headerText headerText headerText headerText headerText headerText headerText headerText headerText . . .";
-      }
-
-      @include breakpoint.media-breakpoint-up(xl) {
-        grid-template-areas: "headerTit headerTit headerTit headerTit headerTit headerTit headerText headerText headerText headerText headerText headerText";
-      }
-
-      @include breakpoint.media-breakpoint-up(xxl) {
-        grid-template-areas: "headerTit headerTit headerTit headerTit headerTit headerTit headerTit headerText headerText headerText headerText headerText";
-      }
-
-      .title-default {
-        grid-area: headerTit;
-      }
-      .text-intro {
-        grid-area: headerText;
-      }
     }
 
     .cont-cards {
-      gap: 1.5rem;
-
-      display: grid;
-
-      @include breakpoint.media-breakpoint-up(md) {
-        grid-template-columns: repeat(auto-fit, minmax(333px, 1fr));
-      }
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 5rem;
 
       @include breakpoint.media-breakpoint-up(lg) {
-        grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+        gap: 10rem;
       }
 
-      @include breakpoint.media-breakpoint-up(xl) {
-        grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
-      }
-
-      @include breakpoint.media-breakpoint-up(xxl) {
-        grid-template-columns: repeat(auto-fit, minmax(354px, 1fr));
-      }
       .card {
-        display: flex;
-        break-inside: avoid;
+        @include breakpoint.media-breakpoint-up(lg) {
+          &:not(:first-child) {
+            opacity: 0.3;
+          }
+          //   transform: scale(0.9);
+          transform-origin: left;
+          transition:
+            transform 0.4s ease-out,
+            opacity 0.4s ease-out;
+          will-change: transform, opacity;
+
+          &.visible {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+
+        picture {
+          img {
+            width: 100%;
+            height: fit-content;
+            object-fit: cover;
+            border-radius: var.$radius-default;
+          }
+        }
+
+        .card-body {
+        }
+        &.card_active {
+          transform: scale(1);
+          opacity: 1;
+          transition: all ease-in-out 0.3s;
+        }
       }
     }
   }
