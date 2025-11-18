@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        {% block meta %}{% endblock %}
+
+        <!-- Mobile Metas -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        {% include "includes/meta/_meta-seo.njk" %}
+        {% include "includes/meta/_meta-og.njk" %}
+        {% include "includes/meta/_meta-twitter.njk" %}
+
+        <!-- Mobile Metas -->
+        <meta name="apple-mobile-web-app-title" content="getIdea">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" />
+        <meta name="apple-mobile-web-app-title" content="getIdea" />
+        <link rel="manifest" href="/assets/img/favicon/site.webmanifest" />
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Performance -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+        <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+            href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@400;700&display=swap">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@400;700&display=swap"
+            rel="stylesheet">
+
+        <!-- Vendor CSS Files -->
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "name": "Getidea: Soluções Digitais para Imobiliárias - Aumente Suas Vendas",
+                "url": "https://getidea-front.surge.sh/lp-startups-campanha01.html",
+                "description": "A Getidea oferece soluções digitais sob medida para imobiliárias: websites, automação de marketing, CRM e muito mais. Aumente suas vendas e conquiste mais clientes!",
+                "keywords": "imobiliária, vendas de imóveis, marketing imobiliário, leads qualificados, automação, CRM, tecnologia imobiliária",
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Limão Acidez Tecnológica",
+                    "logo": "https://getidea-front.surge.sh/assets/img/social/logo_profile.png"
+                }
+            }
+
+        </script>
+
+        <!-- Template Main CSS File -->
+        <link href="/assets/css/style.min.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        {% block content %}{% endblock %}
+
+        <!-- Vendor JS Files -->
+
+        <!-- Template Main JS File -->
+        <script src="/assets/js/main.min.js"></script>
+
+    </body>
+
+</html>
